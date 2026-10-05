@@ -1,0 +1,17 @@
+edge_id,strategy,symbol,tf,n_trades,base_sharpe,t1,t2,t3,t4,t5,t6,t7,t8,t9,score,status
+1,S30b_MidWeek_MeanReversion,XMR_USDT_USDT,1H,812,1.948,True,True,True,False,False,True,True,True,True,7,DEPLOY
+2,S30a_DOW_Seasonality,ATOM_USDT_USDT,4H,333,2.207,False,True,True,False,False,True,True,True,True,6,DEPLOY
+3,S30a_DOW_Seasonality,ADA_USDT_USDT,4H,334,2.224,True,True,True,False,False,True,True,True,True,7,DEPLOY
+4,S30a_DOW_Seasonality,BSV_USDT_USDT,4H,325,2.201,True,True,True,False,False,True,True,True,True,7,DEPLOY
+5,S30a_DOW_Seasonality,ETC_USDT_USDT,4H,339,2.274,True,True,True,False,False,True,True,True,True,7,DEPLOY
+6,S30a_DOW_Seasonality,AVAX_USDT_USDT,4H,348,2.211,True,True,True,False,False,True,True,True,True,7,DEPLOY
+7,S30a_DOW_Seasonality,QTUM_USDT_USDT,4H,320,2.167,True,True,True,False,False,True,True,True,True,7,DEPLOY
+8,S30b_MidWeek_MeanReversion,TWT_USDT_USDT,4H,191,1.965,True,True,True,False,False,True,True,True,True,7,DEPLOY
+9,S30d_NY_London_Momentum,DOT_USDT_USDT,1H,188,2.016,True,True,True,False,False,True,True,True,True,7,DEPLOY
+10,S30d_NY_London_Momentum,XLM_USDT_USDT,1H,188,1.845,False,True,True,False,False,True,True,True,True,6,DEPLOY
+11,R13_ATR_Range_Expansion,ETH_USDT_USDT,4H,113,1.752,True,True,True,False,False,True,True,True,True,7,DEPLOY
+12,R15_Volume_Breakout,SAND_USDT_USDT,4H,149,1.663,True,True,True,False,False,True,True,True,True,7,DEPLOY
+13,R01_EMA_Cross,OP_USDT_USDT,4H,55,1.577,False,True,False,False,False,True,True,False,True,4,MONITOR
+14,R15_Volume_Breakout,OP_USDT_USDT,4H,110,1.789,False,True,True,False,False,True,True,True,True,6,DEPLOY
+15,R01_EMA_Cross,INJ_USDT_USDT,1H,209,1.794,True,True,True,False,False,False,True,True,True,6,DEPLOY
+16,R16_Trend_Plus_RSI_Pullback,DOGE_USDT_USDT,4H,100,1.749,False,True,False,False,False,False,True,True,True,4,MONITOR

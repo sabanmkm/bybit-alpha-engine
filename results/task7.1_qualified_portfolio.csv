@@ -1,0 +1,2 @@
+strategy,symbol,tf,is_sharpe,is_win_rate,is_pf,is_trades,is_return,is_monthly_freq,oos_sharpe,oos_win_rate,oos_pf,oos_trades,oos_return,oos_max_dd,oos_monthly_freq,oos_expectancy,degradation,status,composite
+S30b_MidWeek_MeanReversion,TWT_USDT_USDT,4H,1.176,65.43,1.277,162,18.3,4.329,2.132,68.75,1.494,32,5.25,-2.4,4.025,16.3993,1.814,STRONG_PASS,138.43

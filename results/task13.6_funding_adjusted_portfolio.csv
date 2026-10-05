@@ -1,0 +1,12 @@
+metric,before,after
+total_return_pct,26024.93,25814.86
+cagr_pct,231.07,230.5
+sharpe,2.236,2.218
+sortino,2.917,2.891
+max_dd_pct,-31.33,-31.79
+win_rate_pct,52.75,52.75
+profit_factor,1.349,1.346
+expectancy_dollar,632.5942,627.488
+total_funding_cost,0.0,21006.95
+funding_pct_of_gross,0.0,0.21
+final_equity,2612492.51,2591485.55

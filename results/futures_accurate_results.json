@@ -1,0 +1,134 @@
+[
+  {
+    "symbol": "GALA",
+    "tf": "4H",
+    "strategy": "ttm_squeeze_breakout",
+    "trades": 3,
+    "win_rate": 33.3,
+    "net_pnl": 0.4522,
+    "return_pct": 3.0,
+    "max_dd": 1.0,
+    "sharpe": 1.02,
+    "total_fees": 0.0046,
+    "total_funding": -0.0012,
+    "liquidations": 0,
+    "avg_funding_per_trade": -0.0004,
+    "exit_breakdown": {
+      "TP": 0,
+      "SL": 2,
+      "LIQ": 0,
+      "TIME": 0,
+      "EOD": 1
+    }
+  },
+  {
+    "symbol": "STORJ",
+    "tf": "4H",
+    "strategy": "tweezer_reversal",
+    "trades": 2,
+    "win_rate": 100.0,
+    "net_pnl": 1.0852,
+    "return_pct": 7.2,
+    "max_dd": 0.0,
+    "sharpe": 2.6,
+    "total_fees": 0.0024,
+    "total_funding": -0.002,
+    "liquidations": 0,
+    "avg_funding_per_trade": -0.001,
+    "exit_breakdown": {
+      "TP": 1,
+      "SL": 0,
+      "LIQ": 0,
+      "TIME": 0,
+      "EOD": 1
+    }
+  },
+  {
+    "symbol": "ALGO",
+    "tf": "4H",
+    "strategy": "mtf_supertrend_alignment",
+    "trades": 4,
+    "win_rate": 50.0,
+    "net_pnl": 0.3387,
+    "return_pct": 2.3,
+    "max_dd": 1.0,
+    "sharpe": 1.04,
+    "total_fees": 0.0186,
+    "total_funding": 0.0057,
+    "liquidations": 0,
+    "avg_funding_per_trade": 0.0014,
+    "exit_breakdown": {
+      "TP": 1,
+      "SL": 2,
+      "LIQ": 0,
+      "TIME": 0,
+      "EOD": 1
+    }
+  },
+  {
+    "symbol": "LUNA2",
+    "tf": "4H",
+    "strategy": "ema_cross_20_50",
+    "trades": 24,
+    "win_rate": 66.7,
+    "net_pnl": 0.5242,
+    "return_pct": 3.5,
+    "max_dd": 4.9,
+    "sharpe": 1.9,
+    "total_fees": 0.1,
+    "total_funding": -0.0285,
+    "liquidations": 0,
+    "avg_funding_per_trade": -0.0012,
+    "exit_breakdown": {
+      "TP": 16,
+      "SL": 8,
+      "LIQ": 0,
+      "TIME": 0,
+      "EOD": 0
+    }
+  },
+  {
+    "symbol": "CHZ",
+    "tf": "4H",
+    "strategy": "ema_cross_9_21",
+    "trades": 13,
+    "win_rate": 69.2,
+    "net_pnl": 1.2489,
+    "return_pct": 8.3,
+    "max_dd": 2.5,
+    "sharpe": 1.56,
+    "total_fees": 0.0243,
+    "total_funding": -0.0048,
+    "liquidations": 2,
+    "avg_funding_per_trade": -0.0004,
+    "exit_breakdown": {
+      "TP": 8,
+      "SL": 2,
+      "LIQ": 2,
+      "TIME": 0,
+      "EOD": 1
+    }
+  },
+  {
+    "symbol": "CRO",
+    "tf": "4H",
+    "strategy": "donchian_breakout_55",
+    "trades": 1,
+    "win_rate": 100.0,
+    "net_pnl": 1.356,
+    "return_pct": 9.0,
+    "max_dd": 0.0,
+    "sharpe": 512005516902.04,
+    "total_fees": 0.0028,
+    "total_funding": -0.0015,
+    "liquidations": 0,
+    "avg_funding_per_trade": -0.0015,
+    "exit_breakdown": {
+      "TP": 0,
+      "SL": 0,
+      "LIQ": 0,
+      "TIME": 0,
+      "EOD": 1
+    }
+  }
+]

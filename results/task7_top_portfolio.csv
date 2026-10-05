@@ -1,0 +1,5 @@
+strategy,symbol,tf,is_sharpe,is_win_rate,is_pf,is_trades,is_return,oos_sharpe,oos_win_rate,oos_pf,oos_trades,oos_return,oos_max_dd,oos_monthly_freq,oos_expectancy,status,degradation,composite
+S30b_MidWeek_MeanReversion,TWT_USDT_USDT,4H,1.176,65.43,1.277,162,18.3,2.132,68.75,1.494,32,5.25,-2.4,4.025,16.3993,STRONG_PASS,1.814,126.36
+S30a_DOW_Seasonality,AVAX_USDT_USDT,4H,1.203,48.66,1.417,298,107.95,2.075,51.02,1.534,49,14.23,-7.09,6.163,29.039,STRONG_PASS,1.725,115.69
+S30a_DOW_Seasonality,XLM_USDT_USDT,4H,1.004,48.2,1.421,278,84.35,1.762,48.89,1.404,45,10.41,-4.62,5.66,23.1443,STRONG_PASS,1.754,102.92
+S30b_MidWeek_MeanReversion,OGN_USDT_USDT,4H,0.876,63.68,1.212,212,19.03,0.559,61.9,1.108,21,0.92,-4.04,2.641,4.3577,PASS,0.637,56.25

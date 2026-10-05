@@ -1,0 +1,6 @@
+trades,total_return_pct,cagr_pct,sharpe,sortino,calmar,max_dd_pct,max_dd_bars,profit_factor,win_rate_pct,avg_trade_pct,avg_win_loss,expectancy,composite,strategy,symbol,timeframe,category,monthly_freq,active_months,avg_hold_hours,pct_overnight,skewness,tail_ratio,recovery_factor,ulcer_index,consec_win,consec_loss,alpha_score
+278,37.71,10.86,1.5573,3.1824,2.5699,-4.22,63,1.4667,52.52,0.54,1.3261,13.5651,67.44,S30_Seasonality,TWT_USDT_USDT,4H,Hybrid,7.556,37.0,10.86,0.0,0.836,1.596,7.248,1.689,8.0,5.0,67.51
+31,12.75,3.69,0.9498,4.1699,1.8353,-2.01,5,1.9207,58.06,7.76,1.3872,41.1412,53.16,S13_Hull_MA_Trend,1000LUNC_USDT_USDT,1D,Trend,0.8,25.0,697.55,93.55,0.218,1.622,5.908,0.89,4.0,2.0,62.58
+51,21.92,5.08,1.0452,3.7214,1.6966,-3.0,10,1.9065,56.86,7.37,1.4463,42.9877,60.79,S13_Hull_MA_Trend,ZEN_USDT_USDT,1D,Trend,1.085,37.0,467.29,88.24,-0.189,1.481,6.839,1.04,4.0,3.0,60.46
+290,86.43,16.92,1.2387,4.0683,2.0711,-8.17,45,1.3951,49.66,0.44,1.4144,29.8019,58.8,S28_MTF_RSI_Align,MANA_USDT_USDT,1H,MTF,6.092,48.0,9.2,8.28,0.413,1.439,7.379,2.495,5.0,8.0,54.38
+50,21.1,4.91,0.9852,3.1214,1.3937,-3.52,10,1.8556,56.0,6.46,1.458,42.2016,57.5,S13_Hull_MA_Trend,CHZ_USDT_USDT,1D,Trend,1.064,35.0,484.8,90.0,-0.151,1.493,5.435,1.547,5.0,3.0,53.57

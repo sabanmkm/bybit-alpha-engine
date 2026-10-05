@@ -1,0 +1,122 @@
+[
+  {
+    "symbol": "GALA/USDT/USDT",
+    "timeframe": "4H",
+    "strategy": "ttm_squeeze_breakout",
+    "real_sharpe": 1.58,
+    "monte_carlo": {
+      "mc_max_dd_median": 7.2,
+      "mc_max_dd_95th": 12.0,
+      "mc_ruin_prob_pct": 0.0
+    },
+    "bootstrap_sharpe": {
+      "sharpe_ci_lower_95": 0.71,
+      "sharpe_ci_upper_95": 2.33
+    },
+    "random_entry": {
+      "edge_vs_random_percentile": 98.5
+    },
+    "deflated_sharpe_ratio": 0.0,
+    "verdict": "CONFIRMED_EDGE"
+  },
+  {
+    "symbol": "STORJ/USDT/USDT",
+    "timeframe": "4H",
+    "strategy": "tweezer_reversal",
+    "real_sharpe": 2.15,
+    "monte_carlo": {
+      "mc_max_dd_median": 6.8,
+      "mc_max_dd_95th": 11.5,
+      "mc_ruin_prob_pct": 0.0
+    },
+    "bootstrap_sharpe": {
+      "sharpe_ci_lower_95": 1.24,
+      "sharpe_ci_upper_95": 2.97
+    },
+    "random_entry": {
+      "edge_vs_random_percentile": 98.5
+    },
+    "deflated_sharpe_ratio": 0.0,
+    "verdict": "CONFIRMED_EDGE"
+  },
+  {
+    "symbol": "ALGO/USDT/USDT",
+    "timeframe": "4H",
+    "strategy": "mtf_supertrend_alignment",
+    "real_sharpe": 1.78,
+    "monte_carlo": {
+      "mc_max_dd_median": 4.9,
+      "mc_max_dd_95th": 8.0,
+      "mc_ruin_prob_pct": 0.0
+    },
+    "bootstrap_sharpe": {
+      "sharpe_ci_lower_95": 0.84,
+      "sharpe_ci_upper_95": 2.39
+    },
+    "random_entry": {
+      "edge_vs_random_percentile": 98.5
+    },
+    "deflated_sharpe_ratio": 0.0,
+    "verdict": "CONFIRMED_EDGE"
+  },
+  {
+    "symbol": "LUNA2/USDT/USDT",
+    "timeframe": "4H",
+    "strategy": "ema_cross_20_50",
+    "real_sharpe": 1.5,
+    "monte_carlo": {
+      "mc_max_dd_median": 6.1,
+      "mc_max_dd_95th": 9.8,
+      "mc_ruin_prob_pct": 0.0
+    },
+    "bootstrap_sharpe": {
+      "sharpe_ci_lower_95": 1.0,
+      "sharpe_ci_upper_95": 2.1
+    },
+    "random_entry": {
+      "edge_vs_random_percentile": 98.5
+    },
+    "deflated_sharpe_ratio": NaN,
+    "verdict": "CONFIRMED_EDGE"
+  },
+  {
+    "symbol": "CHZ/USDT/USDT",
+    "timeframe": "4H",
+    "strategy": "ema_cross_9_21",
+    "real_sharpe": 1.45,
+    "monte_carlo": {
+      "mc_max_dd_median": 4.6,
+      "mc_max_dd_95th": 7.4,
+      "mc_ruin_prob_pct": 0.0
+    },
+    "bootstrap_sharpe": {
+      "sharpe_ci_lower_95": 0.37,
+      "sharpe_ci_upper_95": 2.18
+    },
+    "random_entry": {
+      "edge_vs_random_percentile": 98.5
+    },
+    "deflated_sharpe_ratio": 0.0,
+    "verdict": "CONFIRMED_EDGE"
+  },
+  {
+    "symbol": "CRO/USDT/USDT",
+    "timeframe": "4H",
+    "strategy": "donchian_breakout_55",
+    "real_sharpe": 1.4,
+    "monte_carlo": {
+      "mc_max_dd_median": 8.5,
+      "mc_max_dd_95th": 14.5,
+      "mc_ruin_prob_pct": 0.0
+    },
+    "bootstrap_sharpe": {
+      "sharpe_ci_lower_95": 0.64,
+      "sharpe_ci_upper_95": 2.18
+    },
+    "random_entry": {
+      "edge_vs_random_percentile": 98.5
+    },
+    "deflated_sharpe_ratio": 0.0,
+    "verdict": "CONFIRMED_EDGE"
+  }
+]

@@ -1,0 +1,164 @@
+[
+  {
+    "symbol": "LUNA2/USDT/USDT",
+    "timeframe": "480m",
+    "strategy": "ema_cross_20_50",
+    "tuned_strategy_params": {
+      "fast": 13,
+      "slow": 54
+    },
+    "tuned_risk_params": {
+      "sl_atr_mult": 2.0,
+      "tp_atr_mult": 3.0,
+      "trailing_stop_atr": 3.5,
+      "time_stop_bars": 40
+    },
+    "is_trades": 53,
+    "is_sharpe": 1.66,
+    "is_calmar": 1.8,
+    "is_max_dd": 4.1,
+    "is_win_rate": 62.3,
+    "is_pf": 2.33,
+    "oos_trades": 9,
+    "oos_sharpe": -1.17,
+    "oos_return_pct": -1.7,
+    "oos_max_dd": 3.3,
+    "oos_win_rate": 33.3,
+    "oos_pf": 0.65,
+    "sharpe_retention": -0.7,
+    "dd_expansion": 0.8,
+    "wf_pass": false,
+    "mc_95_dd": 6.1,
+    "mc_safe": true
+  },
+  {
+    "symbol": "STG/USDT/USDT",
+    "timeframe": "120m",
+    "strategy": "golden_cross_50_200",
+    "tuned_strategy_params": {
+      "fast": 23,
+      "slow": 47
+    },
+    "tuned_risk_params": {
+      "sl_atr_mult": 3.0,
+      "tp_atr_mult": 8.0,
+      "trailing_stop_atr": 2.5,
+      "time_stop_bars": 40
+    },
+    "is_trades": 247,
+    "is_sharpe": 1.43,
+    "is_calmar": 3.12,
+    "is_max_dd": 7.0,
+    "is_win_rate": 51.0,
+    "is_pf": 1.64,
+    "oos_trades": 41,
+    "oos_sharpe": 1.53,
+    "oos_return_pct": 7.1,
+    "oos_max_dd": 3.6,
+    "oos_win_rate": 46.3,
+    "oos_pf": 1.4,
+    "sharpe_retention": 1.07,
+    "dd_expansion": 0.51,
+    "wf_pass": true,
+    "mc_95_dd": 15.7,
+    "mc_safe": true
+  },
+  {
+    "symbol": "DOT/USDT/USDT",
+    "timeframe": "300m",
+    "strategy": "mtf_supertrend_alignment",
+    "tuned_strategy_params": {
+      "htf_mult": 6,
+      "st_period": 12,
+      "st_mult": 3.75
+    },
+    "tuned_risk_params": {
+      "sl_atr_mult": 2.5,
+      "tp_atr_mult": 5.5,
+      "trailing_stop_atr": 3.5,
+      "time_stop_bars": 60
+    },
+    "is_trades": 48,
+    "is_sharpe": 2.1,
+    "is_calmar": 3.31,
+    "is_max_dd": 3.0,
+    "is_win_rate": 66.7,
+    "is_pf": 3.13,
+    "oos_trades": 9,
+    "oos_sharpe": 0.2,
+    "oos_return_pct": 1.7,
+    "oos_max_dd": 2.0,
+    "oos_win_rate": 44.4,
+    "oos_pf": 1.33,
+    "sharpe_retention": 0.1,
+    "dd_expansion": 0.67,
+    "wf_pass": false,
+    "mc_95_dd": 6.1,
+    "mc_safe": true
+  },
+  {
+    "symbol": "GALA/USDT/USDT",
+    "timeframe": "540m",
+    "strategy": "marubozu_continuation",
+    "tuned_strategy_params": {
+      "body_pct": 0.049999999999999996,
+      "ema_period": 22
+    },
+    "tuned_risk_params": {
+      "sl_atr_mult": 4.5,
+      "tp_atr_mult": 7.0,
+      "trailing_stop_atr": 3.5,
+      "time_stop_bars": 30
+    },
+    "is_trades": 139,
+    "is_sharpe": 1.11,
+    "is_calmar": 1.23,
+    "is_max_dd": 4.9,
+    "is_win_rate": 58.3,
+    "is_pf": 1.73,
+    "oos_trades": 23,
+    "oos_sharpe": 0.09,
+    "oos_return_pct": 1.9,
+    "oos_max_dd": 3.1,
+    "oos_win_rate": 56.5,
+    "oos_pf": 1.26,
+    "sharpe_retention": 0.08,
+    "dd_expansion": 0.63,
+    "wf_pass": false,
+    "mc_95_dd": 7.2,
+    "mc_safe": true
+  },
+  {
+    "symbol": "VET/USDT/USDT",
+    "timeframe": "300m",
+    "strategy": "mtf_supertrend_alignment",
+    "tuned_strategy_params": {
+      "htf_mult": 3,
+      "st_period": 17,
+      "st_mult": 3.0
+    },
+    "tuned_risk_params": {
+      "sl_atr_mult": 1.5,
+      "tp_atr_mult": 7.5,
+      "trailing_stop_atr": 1.5,
+      "time_stop_bars": 50
+    },
+    "is_trades": 74,
+    "is_sharpe": 1.92,
+    "is_calmar": 3.91,
+    "is_max_dd": 6.2,
+    "is_win_rate": 47.3,
+    "is_pf": 2.98,
+    "oos_trades": 15,
+    "oos_sharpe": -1.58,
+    "oos_return_pct": -7.6,
+    "oos_max_dd": 7.5,
+    "oos_win_rate": 20.0,
+    "oos_pf": 0.38,
+    "sharpe_retention": -0.83,
+    "dd_expansion": 1.21,
+    "wf_pass": false,
+    "mc_95_dd": 12.5,
+    "mc_safe": true
+  }
+]

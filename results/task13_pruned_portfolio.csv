@@ -1,0 +1,4 @@
+edge_id,strategy,symbol,tf,n_trades,base_sharpe,t1,t2,t3,t4,t5,t6,t7,t8,t9,score,status
+3,S30a_DOW_Seasonality,ADA_USDT_USDT,4H,334,1.203,False,False,True,True,True,True,True,False,False,5,MONITOR
+4,S30a_DOW_Seasonality,BSV_USDT_USDT,4H,325,1.427,False,True,True,True,False,True,True,False,False,5,MONITOR
+9,S30d_NY_London_Momentum,DOT_USDT_USDT,1H,188,0.946,False,False,True,True,True,True,True,False,False,5,MONITOR

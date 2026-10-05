@@ -1,0 +1,7 @@
+edge_id,strategy,symbol,tf,failed_test,detail
+9,S30d_NY_London_Momentum,DOT_USDT_USDT,1H,C,"diff_pct=0.81%, base_sig=298, leak_sig=406"
+9,S30d_NY_London_Momentum,DOT_USDT_USDT,1H,F,"cur=201, ref=188, dev=6.91%"
+10,S30d_NY_London_Momentum,XLM_USDT_USDT,1H,C,"diff_pct=0.83%, base_sig=321, leak_sig=403"
+12,R15_Volume_Breakout,SAND_USDT_USDT,4H,F,"cur=157, ref=149, dev=5.37%"
+13,R01_EMA_Cross,OP_USDT_USDT,4H,F,"cur=58, ref=55, dev=5.45%"
+14,R15_Volume_Breakout,OP_USDT_USDT,4H,F,"cur=129, ref=110, dev=17.27%"

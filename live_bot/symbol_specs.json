@@ -1,0 +1,68 @@
+{
+  "GALA/USDT:USDT": {
+    "symbol": "GALA/USDT:USDT",
+    "live_price": 0.001893,
+    "min_qty": 1.0,
+    "qty_step": 1.0,
+    "min_notional_rule": 5.0,
+    "min_contracts": 2642.0,
+    "actual_order_notional": 5.0013,
+    "margin_locked_10x": 0.5001,
+    "pct_of_15_account": 3.33
+  },
+  "STORJ/USDT:USDT": {
+    "symbol": "STORJ/USDT:USDT",
+    "live_price": 0.0303,
+    "min_qty": 0.1,
+    "qty_step": 0.1,
+    "min_notional_rule": 5.0,
+    "min_contracts": 165.10000000000002,
+    "actual_order_notional": 5.0025,
+    "margin_locked_10x": 0.5003,
+    "pct_of_15_account": 3.34
+  },
+  "ALGO/USDT:USDT": {
+    "symbol": "ALGO/USDT:USDT",
+    "live_price": 0.09537,
+    "min_qty": 0.1,
+    "qty_step": 0.1,
+    "min_notional_rule": 5.0,
+    "min_contracts": 52.5,
+    "actual_order_notional": 5.0069,
+    "margin_locked_10x": 0.5007,
+    "pct_of_15_account": 3.34
+  },
+  "LUNA2/USDT:USDT": {
+    "symbol": "LUNA2/USDT:USDT",
+    "live_price": 0.04729,
+    "min_qty": 0.1,
+    "qty_step": 0.1,
+    "min_notional_rule": 5.0,
+    "min_contracts": 105.80000000000001,
+    "actual_order_notional": 5.0033,
+    "margin_locked_10x": 0.5003,
+    "pct_of_15_account": 3.34
+  },
+  "CHZ/USDT:USDT": {
+    "symbol": "CHZ/USDT:USDT",
+    "live_price": 0.01401,
+    "min_qty": 1.0,
+    "qty_step": 1.0,
+    "min_notional_rule": 5.0,
+    "min_contracts": 357.0,
+    "actual_order_notional": 5.0016,
+    "margin_locked_10x": 0.5002,
+    "pct_of_15_account": 3.33
+  },
+  "CRO/USDT:USDT": {
+    "symbol": "CRO/USDT:USDT",
+    "live_price": 0.0577,
+    "min_qty": 1.0,
+    "qty_step": 1.0,
+    "min_notional_rule": 5.0,
+    "min_contracts": 87.0,
+    "actual_order_notional": 5.0199,
+    "margin_locked_10x": 0.502,
+    "pct_of_15_account": 3.35
+  }
+}

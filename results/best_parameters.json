@@ -1,0 +1,110 @@
+{
+  "S30_Seasonality|TWT_USDT_USDT|4H": {
+    "entry_day_long": 4,
+    "entry_day_short": 3,
+    "rsi_period": 14,
+    "rsi_long_threshold": 50,
+    "rsi_short_threshold": 50,
+    "macd_fast": 12,
+    "macd_slow": 26,
+    "macd_signal": 9,
+    "hold_bars": 2,
+    "sl_atr_mult": 2.2,
+    "tp_atr_mult": 2.5,
+    "atr_period": 14
+  },
+  "S13_Hull_MA_Trend|1000LUNC_USDT_USDT|1D": {
+    "hma_period": 21,
+    "slope_lookback": 2,
+    "sl_atr_mult": 2.0,
+    "tp_atr_mult": 3.0,
+    "atr_period": 14,
+    "trend_filter_ema": 0,
+    "min_slope_threshold": 0.0
+  },
+  "S13_Hull_MA_Trend|ZEN_USDT_USDT|1D": {
+    "hma_period": 21,
+    "slope_lookback": 2,
+    "sl_atr_mult": 2.0,
+    "tp_atr_mult": 3.0,
+    "atr_period": 14,
+    "trend_filter_ema": 0,
+    "min_slope_threshold": 0.0
+  },
+  "S28_MTF_RSI_Align|MANA_USDT_USDT|1H": {
+    "rsi_period": 7,
+    "rsi_higher_tf_threshold": 54.614581472452514,
+    "rsi_entry_threshold": 50.438355612025816,
+    "higher_tf": "1D",
+    "sl_atr_mult": 2.1335256592975007,
+    "tp_atr_mult": 3.546730536889176,
+    "atr_period": 13,
+    "rsi_exit_overbought": 71.79835370189531,
+    "rsi_exit_oversold": 20.018478696039516,
+    "cooldown_bars": 2
+  },
+  "S13_Hull_MA_Trend|CHZ_USDT_USDT|1D": {
+    "hma_period": 21,
+    "slope_lookback": 2,
+    "sl_atr_mult": 2.0,
+    "tp_atr_mult": 3.0,
+    "atr_period": 14,
+    "trend_filter_ema": 0,
+    "min_slope_threshold": 0.0
+  },
+  "S28_MTF_RSI_Align|AVAX_USDT_USDT|1H": {
+    "rsi_period": 14,
+    "rsi_higher_tf_threshold": 56.0,
+    "rsi_entry_threshold": 50,
+    "higher_tf": "4H",
+    "sl_atr_mult": 1.6,
+    "tp_atr_mult": 2.5,
+    "atr_period": 14,
+    "rsi_exit_overbought": 75,
+    "rsi_exit_oversold": 25,
+    "cooldown_bars": 0
+  },
+  "S11_Supertrend|ANKR_USDT_USDT|4H": {
+    "st_period": 10,
+    "st_multiplier": 3.0,
+    "sl_atr_mult": 2.0,
+    "tp_atr_mult": 3.0,
+    "atr_period": 14,
+    "trend_filter_ema": 0,
+    "use_trailing_stop": false,
+    "trailing_atr_mult": 2.0
+  },
+  "S28_MTF_RSI_Align|ZRX_USDT_USDT|1H": {
+    "rsi_period": 8,
+    "rsi_higher_tf_threshold": 54.68373040333955,
+    "rsi_entry_threshold": 46.641005545887495,
+    "higher_tf": "1D",
+    "sl_atr_mult": 2.1116489667619285,
+    "tp_atr_mult": 3.671493361009686,
+    "atr_period": 13,
+    "rsi_exit_overbought": 78.81765438224073,
+    "rsi_exit_oversold": 28.691822392858,
+    "cooldown_bars": 0
+  },
+  "S11_Supertrend|AVAX_USDT_USDT|4H": {
+    "st_period": 12,
+    "st_multiplier": 3.5719719327594994,
+    "sl_atr_mult": 1.6773889008722354,
+    "tp_atr_mult": 4.168471891056424,
+    "atr_period": 14,
+    "trend_filter_ema": 100,
+    "use_trailing_stop": 0,
+    "trailing_atr_mult": 2.70490379553151
+  },
+  "S02_Inverted_Hammer_Long|CHZ_USDT_USDT|4H": {
+    "body_ratio_max": 0.33,
+    "upper_wick_ratio_min": 2.0,
+    "lower_wick_ratio_max": 0.5,
+    "adx_period": 14,
+    "adx_threshold": 20,
+    "sl_atr_mult": 1.0,
+    "tp_atr_mult": 1.5,
+    "atr_period": 14,
+    "volume_confirm_mult": 1.0
+  }
+}

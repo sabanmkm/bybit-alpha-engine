@@ -1,0 +1,1446 @@
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+║                                      MULTI-TIMEFRAME CRYPTO CANDLESTICK ENGINE                                       ║
+║                                            Run Time: 2026-09-18 11:23:20                                             ║
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                               DATA LOADING & DISCOVERY                                               ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+  Loading 15m timeframe (127 files)...
+    ✓ 15m: Successfully loaded 127 symbols
+  Loading 30m timeframe (127 files)...
+    ✓ 30m: Successfully loaded 127 symbols
+  Loading 1H timeframe (127 files)...
+    ✓ 1H: Successfully loaded 127 symbols
+  Loading 4H timeframe (127 files)...
+    ✓ 4H: Successfully loaded 127 symbols
+  Loading 1D timeframe (127 files)...
+    ✓ 1D: Successfully loaded 127 symbols
+
+  Dataset Inventory: 635 total series across 127 unique assets
+
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                       SECTION 1: DATA INVENTORY & HEALTH CHECK                                       ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Timeframe Health: 15m (127 symbols)                                                                                  │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol                Candles  Start       End         Missing%      Gaps    Score  Flags
+------------------  ---------  ----------  ----------  ----------  ------  -------  -------
+1000BTT_USDT_USDT      158263  2022-02-25  2026-08-31  0.0%             0      100  OK
+1000LUNC_USDT_USDT     139449  2022-09-09  2026-08-31  0.0%             0      100  OK
+1000XEC_USDT_USDT      153751  2022-04-13  2026-08-31  0.0%             0      100  OK
+1INCH_USDT_USDT        163584  2022-01-01  2026-08-31  0.0%             0      100  OK
+AAVE_USDT_USDT         163584  2022-01-01  2026-08-31  0.0%             0      100  OK
+ACH_USDT_USDT          154226  2022-04-08  2026-08-31  0.0%             0      100  OK
+ADA_USDT_USDT          163584  2022-01-01  2026-08-31  0.0%             0      100  OK
+AGLD_USDT_USDT         152893  2022-04-22  2026-08-31  0.0%             0      100  OK
+ALGO_USDT_USDT         163584  2022-01-01  2026-08-31  0.0%             0      100  OK
+ALICE_USDT_USDT        163584  2022-01-01  2026-08-31  0.0%             0      100  OK
+ANKR_USDT_USDT         163584  2022-01-01  2026-08-31  0.0%             0      100  OK
+APE_USDT_USDT          156273  2022-03-18  2026-08-31  0.0%             0      100  OK
+API3_USDT_USDT         157986  2022-02-28  2026-08-31  0.0%             0      100  OK
+APT_USDT_USDT          135637  2022-10-19  2026-08-31  0.0%             0      100  OK
+ARPA_USDT_USDT         153070  2022-04-20  2026-08-31  0.0%             0      100  OK
+AR_USDT_USDT           163584  2022-01-01  2026-08-31  0.0%             0      100  OK
+ASTR_USDT_USDT         154631  2022-04-04  2026-08-31  0.0%             0      100  OK
+ATOM_USDT_USDT         163584  2022-01-01  2026-08-31  0.0%             0      100  OK
+AVAX_USDT_USDT         163584  2022-01-01  2026-08-31  0.0%             0      100  OK
+AXS_USDT_USDT          163584  2022-01-01  2026-08-31  0.0%             0      100  OK
+BAND_USDT_USDT         158452  2022-02-23  2026-08-31  0.0%             0      100  OK
+BAT_USDT_USDT          163584  2022-01-01  2026-08-31  0.0%             0      100  OK
+BCH_USDT_USDT          163584  2022-01-01  2026-08-31  0.0%             0      100  OK
+BEL_USDT_USDT          147523  2022-06-17  2026-08-31  0.0%             0      100  OK
+BICO_USDT_USDT         163584  2022-01-01  2026-08-31  0.0%             0      100  OK
+BNB_USDT_USDT          163584  2022-01-01  2026-08-31  0.0%             0      100  OK
+BOBA_USDT_USDT         154319  2022-04-07  2026-08-31  0.0%             0      100  OK
+BSV_USDT_USDT          163584  2022-01-01  2026-08-31  0.0%             0      100  OK
+BTC_USDT_USDT          163584  2022-01-01  2026-08-31  0.0%             0      100  OK
+C98_USDT_USDT          163584  2022-01-01  2026-08-31  0.0%             0      100  OK
+    ... [97 additional symbols written to full report file]
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Timeframe Health: 30m (127 symbols)                                                                                  │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol                Candles  Start       End         Missing%      Gaps    Score  Flags
+------------------  ---------  ----------  ----------  ----------  ------  -------  -------
+1000BTT_USDT_USDT       79132  2022-02-25  2026-08-31  0.0%             0      100  OK
+1000LUNC_USDT_USDT      69725  2022-09-09  2026-08-31  0.0%             0      100  OK
+1000XEC_USDT_USDT       76876  2022-04-13  2026-08-31  0.0%             0      100  OK
+1INCH_USDT_USDT         81792  2022-01-01  2026-08-31  0.0%             0      100  OK
+AAVE_USDT_USDT          81792  2022-01-01  2026-08-31  0.0%             0      100  OK
+ACH_USDT_USDT           77113  2022-04-08  2026-08-31  0.0%             0      100  OK
+ADA_USDT_USDT           81792  2022-01-01  2026-08-31  0.0%             0      100  OK
+AGLD_USDT_USDT          76447  2022-04-22  2026-08-31  0.0%             0      100  OK
+ALGO_USDT_USDT          81792  2022-01-01  2026-08-31  0.0%             0      100  OK
+ALICE_USDT_USDT         81792  2022-01-01  2026-08-31  0.0%             0      100  OK
+ANKR_USDT_USDT          81792  2022-01-01  2026-08-31  0.0%             0      100  OK
+APE_USDT_USDT           78137  2022-03-18  2026-08-31  0.0%             0      100  OK
+API3_USDT_USDT          78993  2022-02-28  2026-08-31  0.0%             0      100  OK
+APT_USDT_USDT           67819  2022-10-19  2026-08-31  0.0%             0      100  OK
+ARPA_USDT_USDT          76535  2022-04-20  2026-08-31  0.0%             0      100  OK
+AR_USDT_USDT            81792  2022-01-01  2026-08-31  0.0%             0      100  OK
+ASTR_USDT_USDT          77316  2022-04-04  2026-08-31  0.0%             0      100  OK
+ATOM_USDT_USDT          81792  2022-01-01  2026-08-31  0.0%             0      100  OK
+AVAX_USDT_USDT          81792  2022-01-01  2026-08-31  0.0%             0      100  OK
+AXS_USDT_USDT           81792  2022-01-01  2026-08-31  0.0%             0      100  OK
+BAND_USDT_USDT          79226  2022-02-23  2026-08-31  0.0%             0      100  OK
+BAT_USDT_USDT           81792  2022-01-01  2026-08-31  0.0%             0      100  OK
+BCH_USDT_USDT           81792  2022-01-01  2026-08-31  0.0%             0      100  OK
+BEL_USDT_USDT           73762  2022-06-17  2026-08-31  0.0%             0      100  OK
+BICO_USDT_USDT          81792  2022-01-01  2026-08-31  0.0%             0      100  OK
+BNB_USDT_USDT           81792  2022-01-01  2026-08-31  0.0%             0      100  OK
+BOBA_USDT_USDT          77160  2022-04-07  2026-08-31  0.0%             0      100  OK
+BSV_USDT_USDT           81792  2022-01-01  2026-08-31  0.0%             0      100  OK
+BTC_USDT_USDT           81792  2022-01-01  2026-08-31  0.0%             0      100  OK
+C98_USDT_USDT           81792  2022-01-01  2026-08-31  0.0%             0      100  OK
+    ... [97 additional symbols written to full report file]
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Timeframe Health: 1H (127 symbols)                                                                                   │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol                Candles  Start       End         Missing%      Gaps    Score  Flags
+------------------  ---------  ----------  ----------  ----------  ------  -------  -------
+1000BTT_USDT_USDT       39566  2022-02-25  2026-08-31  0.0%             0      100  OK
+1000LUNC_USDT_USDT      34863  2022-09-09  2026-08-31  0.0%             0      100  OK
+1000XEC_USDT_USDT       38438  2022-04-13  2026-08-31  0.0%             0      100  OK
+1INCH_USDT_USDT         40896  2022-01-01  2026-08-31  0.0%             0      100  OK
+AAVE_USDT_USDT          40896  2022-01-01  2026-08-31  0.0%             0      100  OK
+ACH_USDT_USDT           38557  2022-04-08  2026-08-31  0.0%             0      100  OK
+ADA_USDT_USDT           40896  2022-01-01  2026-08-31  0.0%             0      100  OK
+AGLD_USDT_USDT          38224  2022-04-22  2026-08-31  0.0%             0      100  OK
+ALGO_USDT_USDT          40896  2022-01-01  2026-08-31  0.0%             0      100  OK
+ALICE_USDT_USDT         40896  2022-01-01  2026-08-31  0.0%             0      100  OK
+ANKR_USDT_USDT          40896  2022-01-01  2026-08-31  0.0%             0      100  OK
+APE_USDT_USDT           39069  2022-03-18  2026-08-31  0.0%             0      100  OK
+API3_USDT_USDT          39497  2022-02-28  2026-08-31  0.0%             0      100  OK
+APT_USDT_USDT           33910  2022-10-19  2026-08-31  0.0%             0      100  OK
+ARPA_USDT_USDT          38268  2022-04-20  2026-08-31  0.0%             0      100  OK
+AR_USDT_USDT            40896  2022-01-01  2026-08-31  0.0%             0      100  OK
+ASTR_USDT_USDT          38658  2022-04-04  2026-08-31  0.0%             0      100  OK
+ATOM_USDT_USDT          40896  2022-01-01  2026-08-31  0.0%             0      100  OK
+AVAX_USDT_USDT          40896  2022-01-01  2026-08-31  0.0%             0      100  OK
+AXS_USDT_USDT           40896  2022-01-01  2026-08-31  0.0%             0      100  OK
+BAND_USDT_USDT          39613  2022-02-23  2026-08-31  0.0%             0      100  OK
+BAT_USDT_USDT           40896  2022-01-01  2026-08-31  0.0%             0      100  OK
+BCH_USDT_USDT           40896  2022-01-01  2026-08-31  0.0%             0      100  OK
+BEL_USDT_USDT           36881  2022-06-17  2026-08-31  0.0%             0      100  OK
+BICO_USDT_USDT          40896  2022-01-01  2026-08-31  0.0%             0      100  OK
+BNB_USDT_USDT           40896  2022-01-01  2026-08-31  0.0%             0      100  OK
+BOBA_USDT_USDT          38580  2022-04-07  2026-08-31  0.0%             0      100  OK
+BSV_USDT_USDT           40896  2022-01-01  2026-08-31  0.0%             0      100  OK
+BTC_USDT_USDT           40896  2022-01-01  2026-08-31  0.0%             0      100  OK
+C98_USDT_USDT           40896  2022-01-01  2026-08-31  0.0%             0      100  OK
+    ... [97 additional symbols written to full report file]
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Timeframe Health: 4H (127 symbols)                                                                                   │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol                Candles  Start       End         Missing%      Gaps    Score  Flags
+------------------  ---------  ----------  ----------  ----------  ------  -------  -------
+1000BTT_USDT_USDT        9892  2022-02-25  2026-08-31  0.0%             0      100  OK
+1000LUNC_USDT_USDT       8716  2022-09-09  2026-08-31  0.0%             0      100  OK
+1000XEC_USDT_USDT        9610  2022-04-13  2026-08-31  0.0%             0      100  OK
+1INCH_USDT_USDT         10224  2022-01-01  2026-08-31  0.0%             0      100  OK
+AAVE_USDT_USDT          10224  2022-01-01  2026-08-31  0.0%             0      100  OK
+ACH_USDT_USDT            9640  2022-04-08  2026-08-31  0.0%             0      100  OK
+ADA_USDT_USDT           10224  2022-01-01  2026-08-31  0.0%             0      100  OK
+AGLD_USDT_USDT           9556  2022-04-22  2026-08-31  0.0%             0      100  OK
+ALGO_USDT_USDT          10224  2022-01-01  2026-08-31  0.0%             0      100  OK
+ALICE_USDT_USDT         10224  2022-01-01  2026-08-31  0.0%             0      100  OK
+ANKR_USDT_USDT          10224  2022-01-01  2026-08-31  0.0%             0      100  OK
+APE_USDT_USDT            9768  2022-03-18  2026-08-31  0.0%             0      100  OK
+API3_USDT_USDT           9875  2022-02-28  2026-08-31  0.0%             0      100  OK
+APT_USDT_USDT            8478  2022-10-19  2026-08-31  0.0%             0      100  OK
+ARPA_USDT_USDT           9567  2022-04-20  2026-08-31  0.0%             0      100  OK
+AR_USDT_USDT            10224  2022-01-01  2026-08-31  0.0%             0      100  OK
+ASTR_USDT_USDT           9665  2022-04-04  2026-08-31  0.0%             0      100  OK
+ATOM_USDT_USDT          10224  2022-01-01  2026-08-31  0.0%             0      100  OK
+AVAX_USDT_USDT          10224  2022-01-01  2026-08-31  0.0%             0      100  OK
+AXS_USDT_USDT           10224  2022-01-01  2026-08-31  0.0%             0      100  OK
+BAND_USDT_USDT           9904  2022-02-23  2026-08-31  0.0%             0      100  OK
+BAT_USDT_USDT           10224  2022-01-01  2026-08-31  0.0%             0      100  OK
+BCH_USDT_USDT           10224  2022-01-01  2026-08-31  0.0%             0      100  OK
+BEL_USDT_USDT            9221  2022-06-17  2026-08-31  0.0%             0      100  OK
+BICO_USDT_USDT          10224  2022-01-01  2026-08-31  0.0%             0      100  OK
+BNB_USDT_USDT           10224  2022-01-01  2026-08-31  0.0%             0      100  OK
+BOBA_USDT_USDT           9645  2022-04-07  2026-08-31  0.0%             0      100  OK
+BSV_USDT_USDT           10224  2022-01-01  2026-08-31  0.0%             0      100  OK
+BTC_USDT_USDT           10224  2022-01-01  2026-08-31  0.0%             0      100  OK
+C98_USDT_USDT           10224  2022-01-01  2026-08-31  0.0%             0      100  OK
+    ... [97 additional symbols written to full report file]
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Timeframe Health: 1D (127 symbols)                                                                                   │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol                Candles  Start       End         Missing%      Gaps    Score  Flags
+------------------  ---------  ----------  ----------  ----------  ------  -------  -------
+1000BTT_USDT_USDT        1649  2022-02-25  2026-08-31  0.0%             0      100  OK
+1000LUNC_USDT_USDT       1453  2022-09-09  2026-08-31  0.0%             0      100  OK
+1000XEC_USDT_USDT        1602  2022-04-13  2026-08-31  0.0%             0      100  OK
+1INCH_USDT_USDT          1704  2022-01-01  2026-08-31  0.0%             0      100  OK
+AAVE_USDT_USDT           1704  2022-01-01  2026-08-31  0.0%             0      100  OK
+ACH_USDT_USDT            1607  2022-04-08  2026-08-31  0.0%             0      100  OK
+ADA_USDT_USDT            1704  2022-01-01  2026-08-31  0.0%             0      100  OK
+AGLD_USDT_USDT           1593  2022-04-22  2026-08-31  0.0%             0      100  OK
+ALGO_USDT_USDT           1704  2022-01-01  2026-08-31  0.0%             0      100  OK
+ALICE_USDT_USDT          1704  2022-01-01  2026-08-31  0.0%             0      100  OK
+ANKR_USDT_USDT           1704  2022-01-01  2026-08-31  0.0%             0      100  OK
+APE_USDT_USDT            1628  2022-03-18  2026-08-31  0.0%             0      100  OK
+API3_USDT_USDT           1646  2022-02-28  2026-08-31  0.0%             0      100  OK
+APT_USDT_USDT            1413  2022-10-19  2026-08-31  0.0%             0      100  OK
+ARPA_USDT_USDT           1595  2022-04-20  2026-08-31  0.0%             0      100  OK
+AR_USDT_USDT             1704  2022-01-01  2026-08-31  0.0%             0      100  OK
+ASTR_USDT_USDT           1611  2022-04-04  2026-08-31  0.0%             0      100  OK
+ATOM_USDT_USDT           1704  2022-01-01  2026-08-31  0.0%             0      100  OK
+AVAX_USDT_USDT           1704  2022-01-01  2026-08-31  0.0%             0      100  OK
+AXS_USDT_USDT            1704  2022-01-01  2026-08-31  0.0%             0      100  OK
+BAND_USDT_USDT           1651  2022-02-23  2026-08-31  0.0%             0      100  OK
+BAT_USDT_USDT            1704  2022-01-01  2026-08-31  0.0%             0      100  OK
+BCH_USDT_USDT            1704  2022-01-01  2026-08-31  0.0%             0      100  OK
+BEL_USDT_USDT            1537  2022-06-17  2026-08-31  0.0%             0      100  OK
+BICO_USDT_USDT           1704  2022-01-01  2026-08-31  0.0%             0      100  OK
+BNB_USDT_USDT            1704  2022-01-01  2026-08-31  0.0%             0      100  OK
+BOBA_USDT_USDT           1608  2022-04-07  2026-08-31  0.0%             0      100  OK
+BSV_USDT_USDT            1704  2022-01-01  2026-08-31  0.0%             0      100  OK
+BTC_USDT_USDT            1704  2022-01-01  2026-08-31  0.0%             0      100  OK
+C98_USDT_USDT            1704  2022-01-01  2026-08-31  0.0%             0      100  OK
+    ... [97 additional symbols written to full report file]
+
+  ▸ Global Data Health Overview
+  ───────────────────────────────
+  Average Quality Score: 100.0/100
+  High Quality Datasets (≥80): 635
+  Degraded Datasets (<50):     0
+
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                      SECTION 2: CANDLESTICK PATTERN RECOGNITION                                      ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Pattern Analysis: 15m                                                                                                │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol                Total Signals    Patterns Found  Avg Success    Best Pattern     Best %      Reliability
+------------------  ---------------  ----------------  -------------  ---------------  --------  -------------
+1000BTT_USDT_USDT            162299                16  66.7%          Hanging Man      75.3%               100
+1000LUNC_USDT_USDT           129426                16  76.1%          Spinning Top     78.8%               100
+1000XEC_USDT_USDT            149726                16  74.5%          Inverted Hammer  77.4%               100
+1INCH_USDT_USDT              154661                16  75.8%          Inverted Hammer  78.1%               100
+AAVE_USDT_USDT               151355                16  76.2%          Spinning Top     77.8%               100
+ACH_USDT_USDT                148002                16  76.7%          Hanging Man      80.2%               100
+ADA_USDT_USDT                148024                16  75.4%          Spinning Top     76.9%               100
+AGLD_USDT_USDT               144051                16  77.2%          Hanging Man      80.3%               100
+ALGO_USDT_USDT               151798                16  76.1%          Inverted Hammer  78.3%               100
+ALICE_USDT_USDT              156687                16  74.0%          Hanging Man      79.7%               100
+ANKR_USDT_USDT               152762                16  75.8%          Inverted Hammer  77.9%               100
+APE_USDT_USDT                144117                16  76.9%          Spinning Top     78.3%               100
+API3_USDT_USDT               147766                16  76.5%          Spinning Top     78.4%               100
+APT_USDT_USDT                124890                16  77.1%          Spinning Top     78.4%               100
+ARPA_USDT_USDT               146823                16  75.9%          Inverted Hammer  78.8%               100
+AR_USDT_USDT                 153210                16  77.4%          Spinning Top     79.4%               100
+ASTR_USDT_USDT               148544                16  76.3%          Hanging Man      78.8%               100
+ATOM_USDT_USDT               150313                16  75.7%          Hanging Man      77.2%               100
+AVAX_USDT_USDT               148812                16  75.7%          Shooting Star    77.5%               100
+AXS_USDT_USDT                149686                16  76.1%          Hanging Man      77.5%               100
+BAND_USDT_USDT               150546                16  76.1%          Hanging Man      78.8%               100
+BAT_USDT_USDT                156378                16  74.8%          Hanging Man      77.3%               100
+BCH_USDT_USDT                149215                16  73.9%          Inverted Hammer  75.7%               100
+BEL_USDT_USDT                141122                16  76.7%          Inverted Hammer  79.0%               100
+BICO_USDT_USDT               156795                16  74.1%          Hanging Man      79.9%               100
+BNB_USDT_USDT                148221                16  70.7%          Inverted Hammer  73.0%               100
+BOBA_USDT_USDT               155157                16  72.6%          Hanging Man      78.1%               100
+BSV_USDT_USDT                156241                16  74.9%          Inverted Hammer  77.4%               100
+BTC_USDT_USDT                153741                16  67.4%          Spinning Top     69.7%               100
+C98_USDT_USDT                156336                16  76.3%          Hanging Man      79.7%               100
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Pattern Analysis: 30m                                                                                                │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol                Total Signals    Patterns Found  Avg Success    Best Pattern      Best %      Reliability
+------------------  ---------------  ----------------  -------------  ----------------  --------  -------------
+1000BTT_USDT_USDT             81279                16  71.5%          Inverted Hammer   77.6%               100
+1000LUNC_USDT_USDT            65510                16  77.5%          Spinning Top      80.0%               100
+1000XEC_USDT_USDT             73352                16  76.8%          Spinning Top      79.2%               100
+1INCH_USDT_USDT               76548                16  77.9%          Inverted Hammer   79.5%               100
+AAVE_USDT_USDT                76347                16  78.2%          Shooting Star     79.8%               100
+ACH_USDT_USDT                 73721                16  78.6%          Hanging Man       81.0%               100
+ADA_USDT_USDT                 75054                16  77.1%          Spinning Top      78.4%               100
+AGLD_USDT_USDT                71724                16  78.9%          Inverted Hammer   81.3%               100
+ALGO_USDT_USDT                75417                16  78.0%          Hanging Man       79.8%               100
+ALICE_USDT_USDT               78156                16  76.5%          Inverted Hammer   80.3%               100
+ANKR_USDT_USDT                75918                16  77.4%          Inverted Hammer   79.6%               100
+APE_USDT_USDT                 73114                16  78.1%          Bearish Marubozu  79.8%               100
+API3_USDT_USDT                73361                16  78.6%          Spinning Top      80.2%               100
+APT_USDT_USDT                 63198                16  78.3%          Shooting Star     81.0%               100
+ARPA_USDT_USDT                72531                16  78.1%          Inverted Hammer   80.6%               100
+AR_USDT_USDT                  76158                16  78.6%          Spinning Top      80.6%               100
+ASTR_USDT_USDT                73320                16  77.9%          Hanging Man       80.0%               100
+ATOM_USDT_USDT                76789                16  77.5%          Spinning Top      79.2%               100
+AVAX_USDT_USDT                75576                16  77.7%          Shooting Star     79.0%               100
+AXS_USDT_USDT                 75625                16  77.7%          Spinning Top      79.4%               100
+BAND_USDT_USDT                73551                16  78.1%          Spinning Top      80.2%               100
+BAT_USDT_USDT                 77054                16  77.2%          Hanging Man       79.3%               100
+BCH_USDT_USDT                 75471                16  76.6%          Shooting Star     78.9%               100
+BEL_USDT_USDT                 70107                16  78.2%          Hanging Man       80.0%               100
+BICO_USDT_USDT                78047                16  76.7%          Spinning Top      79.5%               100
+BNB_USDT_USDT                 74840                16  74.2%          Hammer            75.9%               100
+BOBA_USDT_USDT                76464                16  75.5%          Hanging Man       80.1%               100
+BSV_USDT_USDT                 76962                16  77.1%          Spinning Top      79.8%               100
+BTC_USDT_USDT                 77118                16  71.7%          Spinning Top      73.7%               100
+C98_USDT_USDT                 77519                16  78.0%          Inverted Hammer   80.2%               100
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Pattern Analysis: 1H                                                                                                 │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol                Total Signals    Patterns Found  Avg Success    Best Pattern      Best %      Reliability
+------------------  ---------------  ----------------  -------------  ----------------  --------  -------------
+1000BTT_USDT_USDT             39555                16  74.9%          Inverted Hammer   80.0%               100
+1000LUNC_USDT_USDT            32537                16  78.8%          Bearish Marubozu  82.4%               100
+1000XEC_USDT_USDT             36418                16  78.3%          Hanging Man       82.0%               100
+1INCH_USDT_USDT               37836                16  79.3%          Hanging Man       82.4%               100
+AAVE_USDT_USDT                37911                16  79.5%          Hanging Man       82.8%               100
+ACH_USDT_USDT                 36783                16  79.7%          Hanging Man       84.0%               100
+ADA_USDT_USDT                 37768                16  78.7%          Hanging Man       81.3%               100
+AGLD_USDT_USDT                35793                16  79.8%          Shooting Star     82.0%               100
+ALGO_USDT_USDT                37471                16  79.5%          Hanging Man       81.2%               100
+ALICE_USDT_USDT               38787                16  78.1%          Hanging Man       81.9%               100
+ANKR_USDT_USDT                38128                16  78.7%          Hanging Man       81.7%               100
+APE_USDT_USDT                 36600                16  79.6%          Hanging Man       81.6%               100
+API3_USDT_USDT                36405                16  79.9%          Hanging Man       82.2%               100
+APT_USDT_USDT                 31609                16  79.7%          Hanging Man       83.2%               100
+ARPA_USDT_USDT                36076                16  79.3%          Hammer            81.3%               100
+AR_USDT_USDT                  38002                16  79.6%          Hanging Man       83.7%               100
+ASTR_USDT_USDT                36561                16  79.2%          Hanging Man       81.3%               100
+ATOM_USDT_USDT                38132                16  78.9%          Hanging Man       80.5%               100
+AVAX_USDT_USDT                38063                16  79.1%          Hanging Man       81.9%               100
+AXS_USDT_USDT                 37772                16  79.4%          Bearish Marubozu  83.2%               100
+BAND_USDT_USDT                36608                16  79.3%          Spinning Top      81.0%               100
+BAT_USDT_USDT                 38280                16  78.7%          Hanging Man       80.9%               100
+BCH_USDT_USDT                 38063                16  78.0%          Inverted Hammer   79.9%               100
+BEL_USDT_USDT                 34821                16  79.3%          Hanging Man       81.8%               100
+BICO_USDT_USDT                38535                16  78.0%          Hanging Man       82.0%               100
+BNB_USDT_USDT                 37686                16  76.8%          Tweezer Bottoms   79.4%               100
+BOBA_USDT_USDT                37272                16  77.8%          Hanging Man       83.8%               100
+BSV_USDT_USDT                 38377                16  78.7%          Inverted Hammer   82.2%               100
+BTC_USDT_USDT                 38564                16  74.8%          Spinning Top      76.6%               100
+C98_USDT_USDT                 37893                16  79.7%          Inverted Hammer   83.9%               100
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Pattern Analysis: 4H                                                                                                 │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol                Total Signals    Patterns Found  Avg Success    Best Pattern       Best %      Reliability
+------------------  ---------------  ----------------  -------------  -----------------  --------  -------------
+1000BTT_USDT_USDT              9498                16  78.6%          Hanging Man        84.1%               100
+1000LUNC_USDT_USDT             8309                16  80.2%          Shooting Star      84.7%               100
+1000XEC_USDT_USDT              9157                16  79.4%          Spinning Top       82.7%               100
+1INCH_USDT_USDT                9507                16  80.5%          Spinning Top       82.3%               100
+AAVE_USDT_USDT                 9642                16  81.0%          Shooting Star      84.7%               100
+ACH_USDT_USDT                  9290                16  81.1%          Spinning Top       85.2%               100
+ADA_USDT_USDT                  9542                16  80.0%          Shooting Star      84.1%               100
+AGLD_USDT_USDT                 8946                16  81.1%          Spinning Top       83.1%               100
+ALGO_USDT_USDT                 9405                16  80.1%          Spinning Top       82.5%               100
+ALICE_USDT_USDT                9627                16  80.1%          Shooting Star      83.2%               100
+ANKR_USDT_USDT                 9412                16  80.3%          Bullish Marubozu   86.4%               100
+APE_USDT_USDT                  9244                16  80.6%          Hanging Man        83.4%               100
+API3_USDT_USDT                 9376                16  80.7%          Shooting Star      86.1%               100
+APT_USDT_USDT                  8017                16  81.1%          Hanging Man        86.1%               100
+ARPA_USDT_USDT                 9121                16  80.7%          Tweezer Bottoms    83.9%               100
+AR_USDT_USDT                   9511                16  81.4%          Hanging Man        88.0%               100
+ASTR_USDT_USDT                 9150                16  81.2%          Hanging Man        85.6%               100
+ATOM_USDT_USDT                 9711                16  81.2%          Three Black Crows  89.5%               100
+AVAX_USDT_USDT                 9553                16  80.1%          Bullish Marubozu   85.7%               100
+AXS_USDT_USDT                  9566                16  81.0%          Bullish Marubozu   89.3%               100
+BAND_USDT_USDT                 9300                16  81.1%          Bullish Marubozu   83.8%               100
+BAT_USDT_USDT                  9263                16  80.6%          Shooting Star      82.8%               100
+BCH_USDT_USDT                  9476                16  80.1%          Hanging Man        83.1%               100
+BEL_USDT_USDT                  8593                16  80.2%          Bearish Marubozu   87.1%               100
+BICO_USDT_USDT                 9694                16  79.5%          Hanging Man        84.6%               100
+BNB_USDT_USDT                  9455                16  78.1%          Hanging Man        85.1%               100
+BOBA_USDT_USDT                 9261                16  79.7%          Spinning Top       84.4%               100
+BSV_USDT_USDT                  9806                16  80.3%          Bullish Marubozu   87.8%               100
+BTC_USDT_USDT                  9755                16  78.0%          Hanging Man        83.0%               100
+C98_USDT_USDT                  9540                16  81.1%          Hanging Man        86.2%               100
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Pattern Analysis: 1D                                                                                                 │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol                Total Signals    Patterns Found  Avg Success    Best Pattern      Best %      Reliability
+------------------  ---------------  ----------------  -------------  ----------------  --------  -------------
+1000BTT_USDT_USDT              1526                16  80.7%          Bearish Marubozu  100.0%              100
+1000LUNC_USDT_USDT             1321                15  80.8%          Bullish Marubozu  100.0%              100
+1000XEC_USDT_USDT              1476                16  80.5%          Hanging Man       88.2%               100
+1INCH_USDT_USDT                1584                16  82.5%          Bullish Marubozu  100.0%              100
+AAVE_USDT_USDT                 1535                16  81.8%          Tweezer Bottoms   87.9%               100
+ACH_USDT_USDT                  1548                16  79.5%          Bearish Marubozu  100.0%              100
+ADA_USDT_USDT                  1467                16  81.7%          Shooting Star     87.0%               100
+AGLD_USDT_USDT                 1498                16  80.4%          Bearish Marubozu  100.0%              100
+ALGO_USDT_USDT                 1530                16  83.2%          Tweezer Tops      91.8%               100
+ALICE_USDT_USDT                1535                16  81.5%          Tweezer Tops      91.0%               100
+ANKR_USDT_USDT                 1559                16  81.0%          Evening Star      88.9%               100
+APE_USDT_USDT                  1530                16  82.8%          Bullish Marubozu  100.0%              100
+API3_USDT_USDT                 1538                16  79.4%          Bearish Marubozu  100.0%              100
+APT_USDT_USDT                  1313                16  81.7%          Spinning Top      85.2%               100
+ARPA_USDT_USDT                 1589                16  81.7%          Bearish Marubozu  100.0%              100
+AR_USDT_USDT                   1583                16  83.1%          Bullish Marubozu  100.0%              100
+ASTR_USDT_USDT                 1521                15  81.0%          Hanging Man       85.1%               100
+ATOM_USDT_USDT                 1537                16  81.2%          Shooting Star     89.6%               100
+AVAX_USDT_USDT                 1461                16  82.3%          Bullish Marubozu  100.0%              100
+AXS_USDT_USDT                  1584                16  83.0%          Spinning Top      88.2%               100
+BAND_USDT_USDT                 1533                16  82.1%          Bearish Marubozu  100.0%              100
+BAT_USDT_USDT                  1536                16  80.8%          Bullish Marubozu  88.9%               100
+BCH_USDT_USDT                  1511                15  81.2%          Evening Star      92.5%               100
+BEL_USDT_USDT                  1508                16  81.1%          Hanging Man       91.7%               100
+BICO_USDT_USDT                 1525                16  81.6%          Tweezer Tops      90.2%               100
+BNB_USDT_USDT                  1528                15  80.1%          Doji              87.6%               100
+BOBA_USDT_USDT                 1532                16  79.2%          Bearish Marubozu  90.0%               100
+BSV_USDT_USDT                  1621                16  81.2%          Bullish Marubozu  100.0%              100
+BTC_USDT_USDT                  1609                16  81.6%          Inverted Hammer   90.6%               100
+C98_USDT_USDT                  1542                16  82.5%          Tweezer Tops      93.4%               100
+
+  ▸ Global Pattern Reliability Table
+  ────────────────────────────────────
+Pattern               Direction      Occurrences    Symbols  Weighted Win%    Avg Ret
+--------------------  -----------  -------------  ---------  ---------------  ---------
+Hanging Man           BEAR               1705652        127  78.4%            +0.121%
+Spinning Top          NEUT               6049658        127  78.4%            +0.051%
+Inverted Hammer       BULL               1567770        127  77.9%            +0.007%
+Shooting Star         BEAR               1567770        127  77.1%            -0.007%
+Bearish Engulfing     BEAR               4011564        127  76.4%            +0.090%
+Hammer                BULL               1705652        127  76.4%            -0.121%
+Bullish Engulfing     BULL               3988043        127  75.8%            -0.099%
+Evening Star          BEAR               1008585        127  75.1%            -0.084%
+Tweezer Tops          BEAR               1832512        127  74.9%            +0.191%
+Morning Star          BULL               1008609        127  74.5%            -0.090%
+Three Black Crows     BEAR               1168459        127  74.5%            -0.147%
+Doji                  BULL               4032624        127  74.4%            -0.076%
+Three White Soldiers  BULL               1298350        127  74.3%            +0.258%
+Tweezer Bottoms       BULL               1728060        127  74.3%            -0.193%
+Bullish Marubozu      BULL               1111437        127  67.9%            -0.321%
+Bearish Marubozu      BEAR               1013200        127  67.2%            -0.377%
+
+  ▸ Cross-Timeframe Pattern Confluence
+  ──────────────────────────────────────
+Symbol              Pattern               Timeframes              TF Count
+------------------  --------------------  --------------------  ----------
+1000BTT_USDT_USDT   Doji                  15m, 30m, 1H, 4H, 1D           5
+1000BTT_USDT_USDT   Hammer                15m, 30m, 1H, 4H, 1D           5
+1000BTT_USDT_USDT   Inverted Hammer       15m, 30m, 1H, 4H, 1D           5
+1000BTT_USDT_USDT   Shooting Star         15m, 30m, 1H, 4H, 1D           5
+1000BTT_USDT_USDT   Bullish Marubozu      15m, 30m, 1H, 4H, 1D           5
+1000BTT_USDT_USDT   Bearish Marubozu      15m, 30m, 1H, 4H, 1D           5
+1000BTT_USDT_USDT   Spinning Top          15m, 30m, 1H, 4H, 1D           5
+1000BTT_USDT_USDT   Hanging Man           15m, 30m, 1H, 4H, 1D           5
+1000BTT_USDT_USDT   Bullish Engulfing     15m, 30m, 1H, 4H, 1D           5
+1000BTT_USDT_USDT   Bearish Engulfing     15m, 30m, 1H, 4H, 1D           5
+1000BTT_USDT_USDT   Tweezer Tops          15m, 30m, 1H, 4H, 1D           5
+1000BTT_USDT_USDT   Tweezer Bottoms       15m, 30m, 1H, 4H, 1D           5
+1000BTT_USDT_USDT   Morning Star          15m, 30m, 1H, 4H, 1D           5
+1000BTT_USDT_USDT   Evening Star          15m, 30m, 1H, 4H, 1D           5
+1000BTT_USDT_USDT   Three White Soldiers  15m, 30m, 1H, 4H, 1D           5
+1000BTT_USDT_USDT   Three Black Crows     15m, 30m, 1H, 4H, 1D           5
+1000LUNC_USDT_USDT  Doji                  15m, 30m, 1H, 4H, 1D           5
+1000LUNC_USDT_USDT  Hammer                15m, 30m, 1H, 4H, 1D           5
+1000LUNC_USDT_USDT  Inverted Hammer       15m, 30m, 1H, 4H, 1D           5
+1000LUNC_USDT_USDT  Shooting Star         15m, 30m, 1H, 4H, 1D           5
+1000LUNC_USDT_USDT  Bullish Marubozu      15m, 30m, 1H, 4H, 1D           5
+1000LUNC_USDT_USDT  Spinning Top          15m, 30m, 1H, 4H, 1D           5
+1000LUNC_USDT_USDT  Hanging Man           15m, 30m, 1H, 4H, 1D           5
+1000LUNC_USDT_USDT  Bullish Engulfing     15m, 30m, 1H, 4H, 1D           5
+1000LUNC_USDT_USDT  Bearish Engulfing     15m, 30m, 1H, 4H, 1D           5
+
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                              SECTION 3: TREND ANALYSIS                                               ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Trend Breakdown: 15m                                                                                                 │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol              Trend           MA Score        ADX  ADX Strength    Structure      Duration  Reversal
+------------------  --------------  ----------  -------  --------------  -----------  ----------  ----------
+1000BTT_USDT_USDT   Uptrend         100%        23.1000  Moderate        Uptrend              18  High
+1000LUNC_USDT_USDT  Mild Uptrend    67%         16.8000  Weak            Uptrend              10  High
+1000XEC_USDT_USDT   Mild Downtrend  17%         14.0000  Weak            Uptrend              26  High
+1INCH_USDT_USDT     Uptrend         100%        11.8000  Weak            Uptrend               3  High
+AAVE_USDT_USDT      Sideways        50%          9.0000  Weak            Uptrend              58  High
+ACH_USDT_USDT       Downtrend       17%          9.2000  Weak            Downtrend             9  High
+ADA_USDT_USDT       Mild Downtrend  33%         23.4000  Moderate        Uptrend              22  High
+AGLD_USDT_USDT      Mild Uptrend    83%         18.1000  Weak            Downtrend             9  High
+ALGO_USDT_USDT      Uptrend         83%         10.6000  Weak            Uptrend              22  High
+ALICE_USDT_USDT     Mild Uptrend    83%         18.6000  Weak            Downtrend             3  High
+ANKR_USDT_USDT      Mild Downtrend  33%         18.2000  Weak            Downtrend            41  High
+APE_USDT_USDT       Mild Uptrend    83%         25.9000  Strong          Sideways              5  High
+API3_USDT_USDT      Mild Uptrend    83%         22.4000  Moderate        Sideways             25  High
+APT_USDT_USDT       Mild Uptrend    100%        21.9000  Moderate        Sideways             20  Normal
+ARPA_USDT_USDT      Mild Downtrend  17%         11.5000  Weak            Sideways              4  High
+AR_USDT_USDT        Downtrend       0%          10.0000  Weak            Downtrend             2  High
+ASTR_USDT_USDT      Mild Downtrend  17%          6.1000  Weak            Uptrend              32  High
+ATOM_USDT_USDT      Downtrend       0%           8.8000  Weak            Downtrend            13  High
+AVAX_USDT_USDT      Uptrend         83%          8.5000  Weak            Uptrend              21  High
+AXS_USDT_USDT       Sideways        50%          7.0000  Weak            Uptrend               8  High
+BAND_USDT_USDT      Mild Uptrend    67%         13.8000  Weak            Uptrend              30  High
+BAT_USDT_USDT       Uptrend         83%         13.9000  Weak            Uptrend               2  High
+BCH_USDT_USDT       Sideways        50%         14.3000  Weak            Uptrend              16  High
+BEL_USDT_USDT       Mild Uptrend    67%          9.5000  Weak            Downtrend             6  High
+BICO_USDT_USDT      Uptrend         100%        31.6000  Strong          Uptrend              57  High
+BNB_USDT_USDT       Mild Uptrend    67%         15.3000  Weak            Uptrend              56  High
+BOBA_USDT_USDT      Mild Downtrend  33%         24.8000  Moderate        Sideways              4  High
+BSV_USDT_USDT       Downtrend       0%          15.9000  Weak            Downtrend             6  High
+BTC_USDT_USDT       Mild Downtrend  33%         21.5000  Moderate        Uptrend              60  High
+C98_USDT_USDT       Uptrend         83%         18.6000  Weak            Uptrend               8  High
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Trend Breakdown: 30m                                                                                                 │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol              Trend           MA Score        ADX  ADX Strength    Structure      Duration  Reversal
+------------------  --------------  ----------  -------  --------------  -----------  ----------  ----------
+1000BTT_USDT_USDT   Uptrend         100%        17.8000  Weak            Uptrend               5  High
+1000LUNC_USDT_USDT  Mild Uptrend    67%         23.4000  Moderate        Uptrend              54  High
+1000XEC_USDT_USDT   Downtrend       17%         11.3000  Weak            Downtrend             9  High
+1INCH_USDT_USDT     Uptrend         83%         12.7000  Weak            Uptrend               7  High
+AAVE_USDT_USDT      Mild Uptrend    67%          9.2000  Weak            Uptrend               6  High
+ACH_USDT_USDT       Downtrend       17%         14.1000  Weak            Downtrend            54  High
+ADA_USDT_USDT       Sideways        50%         20.2000  Moderate        Uptrend              10  High
+AGLD_USDT_USDT      Mild Uptrend    67%         15.3000  Weak            Uptrend              47  High
+ALGO_USDT_USDT      Mild Uptrend    67%         12.6000  Weak            Uptrend               6  High
+ALICE_USDT_USDT     Mild Uptrend    67%         18.3000  Weak            Downtrend            55  High
+ANKR_USDT_USDT      Mild Downtrend  0%          22.0000  Moderate        Sideways             49  High
+APE_USDT_USDT       Mild Uptrend    67%         17.3000  Weak            Sideways             51  High
+API3_USDT_USDT      Mild Uptrend    67%         16.4000  Weak            Downtrend            46  High
+APT_USDT_USDT       Uptrend         83%         27.4000  Strong          Uptrend               3  Normal
+ARPA_USDT_USDT      Mild Downtrend  17%         14.0000  Weak            Sideways             41  High
+AR_USDT_USDT        Mild Downtrend  0%           8.6000  Weak            Sideways             18  High
+ASTR_USDT_USDT      Mild Downtrend  17%          9.7000  Weak            Sideways             10  High
+ATOM_USDT_USDT      Downtrend       0%          13.1000  Weak            Downtrend             3  High
+AVAX_USDT_USDT      Mild Uptrend    67%         11.7000  Weak            Uptrend               5  High
+AXS_USDT_USDT       Mild Downtrend  17%          8.1000  Weak            Uptrend              20  High
+BAND_USDT_USDT      Sideways        50%          9.9000  Weak            Downtrend            27  High
+BAT_USDT_USDT       Mild Uptrend    67%         11.9000  Weak            Sideways             13  High
+BCH_USDT_USDT       Sideways        50%         11.8000  Weak            Uptrend               8  High
+BEL_USDT_USDT       Sideways        50%         14.9000  Weak            Uptrend              33  High
+BICO_USDT_USDT      Mild Uptrend    100%        34.5000  Strong          Downtrend            18  Normal
+BNB_USDT_USDT       Mild Uptrend    67%         20.6000  Moderate        Uptrend               9  High
+BOBA_USDT_USDT      Sideways        50%         37.4000  Strong          Uptrend              14  High
+BSV_USDT_USDT       Mild Downtrend  0%          18.4000  Weak            Sideways             51  High
+BTC_USDT_USDT       Sideways        50%         14.6000  Weak            Sideways             16  High
+C98_USDT_USDT       Mild Uptrend    67%         24.3000  Moderate        Sideways             47  High
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Trend Breakdown: 1H                                                                                                  │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol              Trend           MA Score        ADX  ADX Strength    Structure      Duration  Reversal
+------------------  --------------  ----------  -------  --------------  -----------  ----------  ----------
+1000BTT_USDT_USDT   Uptrend         100%        17.5000  Weak            Uptrend              22  High
+1000LUNC_USDT_USDT  Mild Downtrend  33%         40.0000  Strong          Downtrend            24  High
+1000XEC_USDT_USDT   Downtrend       0%          20.9000  Moderate        Downtrend            16  High
+1INCH_USDT_USDT     Mild Uptrend    67%         19.1000  Weak            Downtrend            11  High
+AAVE_USDT_USDT      Sideways        50%         12.6000  Weak            Sideways             13  High
+ACH_USDT_USDT       Mild Downtrend  0%          32.8000  Strong          Sideways             25  High
+ADA_USDT_USDT       Sideways        50%         21.2000  Moderate        Downtrend            22  High
+AGLD_USDT_USDT      Mild Downtrend  33%         15.1000  Weak            Uptrend              14  High
+ALGO_USDT_USDT      Sideways        50%         18.6000  Weak            Sideways             22  High
+ALICE_USDT_USDT     Mild Downtrend  33%         29.9000  Strong          Sideways             26  High
+ANKR_USDT_USDT      Downtrend       0%          47.1000  Strong          Downtrend            19  High
+APE_USDT_USDT       Sideways        50%         18.3000  Weak            Sideways             36  High
+API3_USDT_USDT      Sideways        50%         19.2000  Weak            Uptrend              16  High
+APT_USDT_USDT       Mild Uptrend    67%         33.1000  Strong          Sideways             22  High
+ARPA_USDT_USDT      Mild Downtrend  17%         21.6000  Moderate        Sideways             10  High
+AR_USDT_USDT        Mild Downtrend  0%           9.8000  Weak            Sideways             12  High
+ASTR_USDT_USDT      Downtrend       17%         13.4000  Weak            Downtrend            21  High
+ATOM_USDT_USDT      Downtrend       0%          14.0000  Weak            Downtrend            38  High
+AVAX_USDT_USDT      Sideways        50%         30.9000  Strong          Sideways             18  High
+AXS_USDT_USDT       Mild Downtrend  0%          16.5000  Weak            Sideways             16  High
+BAND_USDT_USDT      Mild Downtrend  33%         12.4000  Weak            Sideways             22  High
+BAT_USDT_USDT       Mild Downtrend  33%         12.7000  Weak            Sideways             14  High
+BCH_USDT_USDT       Mild Downtrend  17%         25.3000  Strong          Sideways             11  High
+BEL_USDT_USDT       Downtrend       17%         28.8000  Strong          Downtrend            10  High
+BICO_USDT_USDT      Mild Uptrend    100%        26.9000  Strong          Downtrend            24  Normal
+BNB_USDT_USDT       Sideways        50%         16.7000  Weak            Sideways             15  High
+BOBA_USDT_USDT      Uptrend         83%         22.6000  Moderate        Uptrend               5  High
+BSV_USDT_USDT       Downtrend       0%          37.8000  Strong          Downtrend            24  Normal
+BTC_USDT_USDT       Mild Uptrend    67%         15.6000  Weak            Sideways              3  High
+C98_USDT_USDT       Sideways        50%         18.8000  Weak            Sideways             17  High
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Trend Breakdown: 4H                                                                                                  │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol              Trend           MA Score        ADX  ADX Strength    Structure      Duration  Reversal
+------------------  --------------  ----------  -------  --------------  -----------  ----------  ----------
+1000BTT_USDT_USDT   Uptrend         100%        18.9000  Weak            Uptrend               8  High
+1000LUNC_USDT_USDT  Mild Downtrend  0%          25.2000  Strong          Uptrend              28  Normal
+1000XEC_USDT_USDT   Mild Downtrend  17%         19.7000  Weak            Sideways             27  High
+1INCH_USDT_USDT     Mild Uptrend    67%         22.3000  Moderate        Sideways             27  High
+AAVE_USDT_USDT      Mild Uptrend    67%         10.6000  Weak            Sideways             17  High
+ACH_USDT_USDT       Mild Downtrend  33%         18.0000  Weak            Uptrend               8  Normal
+ADA_USDT_USDT       Mild Downtrend  17%         23.1000  Moderate        Uptrend              25  High
+AGLD_USDT_USDT      Downtrend       17%         16.2000  Weak            Downtrend            27  High
+ALGO_USDT_USDT      Downtrend       17%         21.0000  Moderate        Downtrend            25  High
+ALICE_USDT_USDT     Downtrend       17%         20.2000  Moderate        Downtrend            38  Normal
+ANKR_USDT_USDT      Mild Downtrend  33%         15.1000  Weak            Downtrend            11  Normal
+APE_USDT_USDT       Mild Downtrend  33%         18.4000  Weak            Downtrend            22  High
+API3_USDT_USDT      Mild Downtrend  33%         19.7000  Weak            Uptrend               7  Normal
+APT_USDT_USDT       Mild Downtrend  33%         31.2000  Strong          Sideways             30  High
+ARPA_USDT_USDT      Sideways        50%         21.3000  Moderate        Uptrend              78  High
+AR_USDT_USDT        Mild Downtrend  33%         10.7000  Weak            Sideways             19  High
+ASTR_USDT_USDT      Sideways        50%         15.0000  Weak            Sideways             69  High
+ATOM_USDT_USDT      Mild Downtrend  17%         10.6000  Weak            Uptrend              28  High
+AVAX_USDT_USDT      Mild Downtrend  33%         19.8000  Weak            Uptrend              23  High
+AXS_USDT_USDT       Downtrend       17%         23.8000  Moderate        Downtrend            29  High
+BAND_USDT_USDT      Uptrend         83%         38.4000  Strong          Uptrend              25  High
+BAT_USDT_USDT       Mild Downtrend  33%         12.6000  Weak            Sideways             26  High
+BCH_USDT_USDT       Sideways        50%         21.2000  Moderate        Uptrend              21  High
+BEL_USDT_USDT       Mild Downtrend  33%         22.0000  Moderate        Sideways             91  High
+BICO_USDT_USDT      Mild Uptrend    83%         27.0000  Strong          Downtrend            38  Normal
+BNB_USDT_USDT       Mild Uptrend    67%         17.5000  Weak            Downtrend            11  High
+BOBA_USDT_USDT      Uptrend         100%        40.5000  Strong          Uptrend              67  Normal
+BSV_USDT_USDT       Mild Downtrend  17%         20.5000  Moderate        Uptrend              23  Normal
+BTC_USDT_USDT       Uptrend         83%         14.4000  Weak            Uptrend               6  High
+C98_USDT_USDT       Mild Downtrend  17%         15.6000  Weak            Sideways             22  High
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Trend Breakdown: 1D                                                                                                  │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol              Trend           MA Score        ADX  ADX Strength    Structure      Duration  Reversal
+------------------  --------------  ----------  -------  --------------  -----------  ----------  ----------
+1000BTT_USDT_USDT   Mild Uptrend    83%         34.8000  Strong          Downtrend             9  Normal
+1000LUNC_USDT_USDT  Downtrend       0%          29.6000  Strong          Downtrend            84  Normal
+1000XEC_USDT_USDT   Uptrend         83%         31.5000  Strong          Uptrend               1  High
+1INCH_USDT_USDT     Mild Uptrend    100%        19.6000  Weak            Sideways             42  Normal
+AAVE_USDT_USDT      Uptrend         100%        37.2000  Strong          Uptrend               9  Normal
+ACH_USDT_USDT       Sideways        50%         35.2000  Strong          Sideways              8  Normal
+ADA_USDT_USDT       Sideways        50%         30.6000  Strong          Uptrend              43  High
+AGLD_USDT_USDT      Mild Downtrend  33%         29.5000  Strong          Downtrend            12  High
+ALGO_USDT_USDT      Downtrend       17%         21.1000  Moderate        Downtrend            11  High
+ALICE_USDT_USDT     Sideways        50%         40.7000  Strong          Sideways             13  High
+ANKR_USDT_USDT      Mild Uptrend    83%         32.4000  Strong          Downtrend             9  Normal
+APE_USDT_USDT       Sideways        50%         21.3000  Moderate        Downtrend            28  High
+API3_USDT_USDT      Sideways        50%         34.3000  Strong          Downtrend             3  Normal
+APT_USDT_USDT       Downtrend       0%          21.2000  Moderate        Downtrend            93  Normal
+ARPA_USDT_USDT      Mild Uptrend    100%        45.5000  Strong          Sideways             12  Normal
+AR_USDT_USDT        Mild Uptrend    83%         31.7000  Strong          Downtrend             8  Normal
+ASTR_USDT_USDT      Mild Uptrend    83%         37.6000  Strong          Downtrend             3  Normal
+ATOM_USDT_USDT      Downtrend       17%         29.2000  Strong          Downtrend             8  High
+AVAX_USDT_USDT      Mild Uptrend    83%         31.4000  Strong          Downtrend            10  Normal
+AXS_USDT_USDT       Mild Downtrend  0%          28.1000  Strong          Sideways              6  High
+BAND_USDT_USDT      Mild Uptrend    83%         31.7000  Strong          Sideways              9  Normal
+BAT_USDT_USDT       Sideways        50%         24.6000  Moderate        Downtrend            91  Normal
+BCH_USDT_USDT       Mild Uptrend    67%         38.4000  Strong          Downtrend             8  Normal
+BEL_USDT_USDT       Mild Uptrend    100%        40.9000  Strong          Sideways             12  Normal
+BICO_USDT_USDT      Mild Uptrend    100%        43.6000  Strong          Downtrend            24  Normal
+BNB_USDT_USDT       Mild Uptrend    100%        42.3000  Strong          Downtrend            28  Normal
+BOBA_USDT_USDT      Mild Uptrend    67%         40.7000  Strong          Downtrend            88  Normal
+BSV_USDT_USDT       Mild Uptrend    67%         35.6000  Strong          Sideways             52  High
+BTC_USDT_USDT       Mild Uptrend    100%        42.7000  Strong          Sideways             43  Normal
+C98_USDT_USDT       Sideways        50%         27.9000  Strong          Downtrend            19  High
+
+  ▸ Cross-Timeframe Trend Agreement
+  ───────────────────────────────────
+Symbol             Consensus Direction    Agreement %    TF Breakdown
+-----------------  ---------------------  -------------  ------------------------
+1000BTT_USDT_USDT  BULLISH                100%           5 Bull / 0 Bear / 0 Neut
+1INCH_USDT_USDT    BULLISH                100%           5 Bull / 0 Bear / 0 Neut
+ATOM_USDT_USDT     BEARISH                100%           0 Bull / 5 Bear / 0 Neut
+BICO_USDT_USDT     BULLISH                100%           5 Bull / 0 Bear / 0 Neut
+CHR_USDT_USDT      BULLISH                100%           5 Bull / 0 Bear / 0 Neut
+CKB_USDT_USDT      BULLISH                100%           5 Bull / 0 Bear / 0 Neut
+COMP_USDT_USDT     BULLISH                100%           5 Bull / 0 Bear / 0 Neut
+CRV_USDT_USDT      BULLISH                100%           5 Bull / 0 Bear / 0 Neut
+CVX_USDT_USDT      BULLISH                100%           5 Bull / 0 Bear / 0 Neut
+DUSK_USDT_USDT     BEARISH                100%           0 Bull / 5 Bear / 0 Neut
+DYDX_USDT_USDT     BEARISH                100%           0 Bull / 5 Bear / 0 Neut
+EGLD_USDT_USDT     BULLISH                100%           5 Bull / 0 Bear / 0 Neut
+GALA_USDT_USDT     BEARISH                100%           0 Bull / 5 Bear / 0 Neut
+GMT_USDT_USDT      BULLISH                100%           5 Bull / 0 Bear / 0 Neut
+ILV_USDT_USDT      BEARISH                100%           0 Bull / 5 Bear / 0 Neut
+IOST_USDT_USDT     BEARISH                100%           0 Bull / 5 Bear / 0 Neut
+JASMY_USDT_USDT    BULLISH                100%           5 Bull / 0 Bear / 0 Neut
+KSM_USDT_USDT      BULLISH                100%           5 Bull / 0 Bear / 0 Neut
+LRC_USDT_USDT      BEARISH                100%           0 Bull / 5 Bear / 0 Neut
+MINA_USDT_USDT     BULLISH                100%           5 Bull / 0 Bear / 0 Neut
+MTL_USDT_USDT      BULLISH                100%           5 Bull / 0 Bear / 0 Neut
+NEAR_USDT_USDT     BULLISH                100%           5 Bull / 0 Bear / 0 Neut
+QTUM_USDT_USDT     BULLISH                100%           5 Bull / 0 Bear / 0 Neut
+RUNE_USDT_USDT     BULLISH                100%           5 Bull / 0 Bear / 0 Neut
+RVN_USDT_USDT      BEARISH                100%           0 Bull / 5 Bear / 0 Neut
+
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                   SECTION 4: STATISTICAL ANALYSIS & DISTRIBUTIONS                                    ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Distributions & Volatility: 15m                                                                                      │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol              Mean Ret    Std Dev       Skew       Kurt  Ann.Vol%    ATR%       Avg Vol    Spikes
+------------------  ----------  ---------  -------  ---------  ----------  ------  ----------  --------
+1000BTT_USDT_USDT   -0.0004%    0.4032%     6.3900   337.2800  62.7%       0.15%   14,995,155     15296
+1000LUNC_USDT_USDT  +0.0004%    0.6374%    -2.6500   383.0900  99.1%       0.26%      968,786     11900
+1000XEC_USDT_USDT   -0.0003%    0.5328%     0.6400    77.2800  82.9%       0.18%      621,219     13676
+1INCH_USDT_USDT     -0.0007%    0.5125%    -1.7800   142.3600  79.7%       0.23%      144,209     15932
+AAVE_USDT_USDT      +0.0011%    0.5475%    -0.3600    65.0000  85.2%       0.28%        2,973     19369
+ACH_USDT_USDT       +0.0009%    0.6803%     1.3900   114.1200  105.8%      0.25%    1,922,292     14926
+ADA_USDT_USDT       +0.0001%    0.4942%    -0.2800   201.7300  76.9%       0.37%    2,473,812     18394
+AGLD_USDT_USDT      +0.0012%    0.7221%    11.1300  1227.4000  112.3%      0.27%       88,792     13469
+ALGO_USDT_USDT      -0.0004%    0.5338%    -1.0900    64.4300  83.0%       0.33%      664,769     17822
+ALICE_USDT_USDT     -0.0006%    0.6581%     0.1700   102.0600  102.4%      0.25%       57,152     12488
+ANKR_USDT_USDT      -0.0004%    0.5606%     1.7100   282.6300  87.2%       0.26%    1,409,655     13903
+APE_USDT_USDT       -0.0006%    0.6592%    -0.7700   720.2600  102.5%      0.45%      271,061     13172
+API3_USDT_USDT      +0.0001%    0.6831%     6.0800   650.5700  106.2%      0.41%       46,740     12561
+APT_USDT_USDT       -0.0003%    0.5635%    -0.8700    85.7200  87.6%       0.70%      123,957     15446
+ARPA_USDT_USDT      +0.0006%    0.6207%     0.1200   162.5500  96.5%       0.17%      899,792     12850
+AR_USDT_USDT        +0.0002%    0.6635%    -0.8800   197.9000  103.2%      0.34%        8,101     19610
+ASTR_USDT_USDT      -0.0005%    0.6193%     9.7700  1324.1000  96.3%       0.20%      567,564     16477
+ATOM_USDT_USDT      -0.0007%    0.4843%    -1.2900    85.1500  75.3%       0.27%       46,037     18187
+AVAX_USDT_USDT      -0.0003%    0.5305%    -0.8500    87.8100  82.5%       0.22%       40,712     18562
+AXS_USDT_USDT       -0.0012%    0.5751%     1.5400   266.0800  89.5%       0.26%       47,799     12165
+BAND_USDT_USDT      -0.0002%    0.5868%     0.0300    95.4200  91.3%       0.39%       16,786     13917
+BAT_USDT_USDT       -0.0005%    0.5017%    -0.6200    35.6200  78.0%       0.27%       99,663     17089
+BCH_USDT_USDT       +0.0007%    0.4456%    -0.0500    49.9100  69.3%       0.27%        1,431     16395
+BEL_USDT_USDT       +0.0009%    0.6714%    -0.3800   299.7200  104.4%      0.28%       79,494     12645
+BICO_USDT_USDT      -0.0004%    0.7527%     0.6900   170.6500  117.1%      0.97%      162,292      8318
+BNB_USDT_USDT       +0.0007%    0.3232%     0.1700    73.2900  50.3%       0.13%        1,505     17776
+BOBA_USDT_USDT      -0.0009%    0.6245%     2.5300    96.2400  97.1%       0.68%       82,831     12801
+BSV_USDT_USDT       +0.0001%    0.5110%    -0.7700   173.5300  79.5%       0.32%          911     16083
+BTC_USDT_USDT       +0.0007%    0.2752%    -0.3400    55.2500  42.8%       0.17%        1,199     18506
+C98_USDT_USDT       -0.0010%    0.6391%    -2.3800   283.9500  99.4%       0.39%      304,709     15122
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Distributions & Volatility: 30m                                                                                      │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol              Mean Ret    Std Dev       Skew      Kurt  Ann.Vol%    ATR%       Avg Vol    Spikes
+------------------  ----------  ---------  -------  --------  ----------  ------  ----------  --------
+1000BTT_USDT_USDT   -0.0007%    0.5702%     6.4700  257.7700  62.7%       0.26%   29,990,120      7519
+1000LUNC_USDT_USDT  +0.0009%    0.9109%     1.5400  473.6500  100.2%      0.48%    1,937,559      5920
+1000XEC_USDT_USDT   -0.0006%    0.7435%     1.1600   76.1700  81.8%       0.39%    1,242,430      6853
+1INCH_USDT_USDT     -0.0015%    0.7080%    -1.0800  113.7600  77.9%       0.40%      288,418      7886
+AAVE_USDT_USDT      +0.0021%    0.7730%    -0.1100   70.3900  85.0%       0.55%        5,945      9694
+ACH_USDT_USDT       +0.0018%    0.9500%     1.7700  103.1900  104.5%      0.52%    3,844,583      7437
+ADA_USDT_USDT       +0.0001%    0.6961%    -0.4700  172.5200  76.6%       0.73%    4,947,624      9143
+AGLD_USDT_USDT      +0.0024%    1.0156%     8.0600  677.6500  111.7%      0.49%      177,583      6713
+ALGO_USDT_USDT      -0.0008%    0.7469%    -0.7700   50.1800  82.1%       0.57%    1,329,538      8731
+ALICE_USDT_USDT     -0.0014%    0.9155%     0.7500   69.7300  100.7%      0.43%      114,305      6162
+ANKR_USDT_USDT      -0.0009%    0.7922%     1.4800  201.9400  87.1%       0.41%    2,819,310      6920
+APE_USDT_USDT       -0.0012%    0.9283%     1.6400  539.1900  102.1%      0.69%      542,119      6374
+API3_USDT_USDT      +0.0004%    0.9785%     5.5700  389.4300  107.6%      0.69%       93,480      6260
+APT_USDT_USDT       -0.0007%    0.7920%    -0.5200   67.7300  87.1%       0.89%      247,913      7768
+ARPA_USDT_USDT      +0.0013%    0.8821%     1.3400  168.9800  97.0%       0.34%    1,799,584      6503
+AR_USDT_USDT        +0.0003%    0.9344%    -0.2400  170.7800  102.8%      0.56%       16,202      9837
+ASTR_USDT_USDT      -0.0010%    0.8609%     5.7200  615.8700  94.7%       0.37%    1,135,120      8042
+ATOM_USDT_USDT      -0.0015%    0.6827%    -1.2700   84.5700  75.1%       0.45%       92,075      8856
+AVAX_USDT_USDT      -0.0005%    0.7452%    -1.1500   75.8000  82.0%       0.44%       81,424      9214
+AXS_USDT_USDT       -0.0024%    0.8028%    -0.0100  112.4600  88.3%       0.44%       95,597      6010
+BAND_USDT_USDT      -0.0004%    0.8315%     0.2400   79.9100  91.5%       0.58%       33,572      6804
+BAT_USDT_USDT       -0.0011%    0.7023%    -0.2900   24.3500  77.2%       0.45%      199,325      8419
+BCH_USDT_USDT       +0.0013%    0.6279%     0.5900   32.1700  69.1%       0.47%        2,861      8174
+BEL_USDT_USDT       +0.0018%    0.9411%    -0.2100  226.5600  103.5%      0.52%      158,987      6339
+BICO_USDT_USDT      -0.0010%    1.0426%     1.9900  242.5900  114.7%      1.69%      324,584      4055
+BNB_USDT_USDT       +0.0014%    0.4606%    -0.2200   82.1300  50.7%       0.27%        3,010      8748
+BOBA_USDT_USDT      -0.0019%    0.8807%     3.0700   88.7600  96.9%       1.11%      165,661      6474
+BSV_USDT_USDT       +0.0001%    0.7150%     0.0900  104.5700  78.6%       0.52%        1,822      8147
+BTC_USDT_USDT       +0.0014%    0.3865%    -0.0700   20.3200  42.5%       0.35%        2,398      9313
+C98_USDT_USDT       -0.0022%    0.8907%    -2.3100  196.9600  98.0%       0.61%      609,417      7523
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Distributions & Volatility: 1H                                                                                       │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol              Mean Ret    Std Dev       Skew       Kurt  Ann.Vol%    ATR%       Avg Vol    Spikes
+------------------  ----------  ---------  -------  ---------  ----------  ------  ----------  --------
+1000BTT_USDT_USDT   -0.0014%    0.8187%     8.2000   324.4400  63.7%       0.41%   59,980,241      3674
+1000LUNC_USDT_USDT  +0.0004%    1.1860%     0.7600    53.8500  92.2%       0.82%    3,875,062      3020
+1000XEC_USDT_USDT   -0.0016%    1.0134%     1.4400    39.7000  78.8%       0.74%    2,484,859      3518
+1INCH_USDT_USDT     -0.0034%    0.9705%    -0.4100    17.9700  75.5%       0.80%      576,836      3881
+AAVE_USDT_USDT      +0.0039%    1.0687%     0.1800    13.0900  83.1%       0.98%       11,890      4822
+ACH_USDT_USDT       +0.0030%    1.3121%     3.0500    83.8400  102.0%      0.92%    7,689,067      3715
+ADA_USDT_USDT       -0.0001%    0.9524%     0.9600    59.3800  74.1%       1.30%    9,895,248      4528
+AGLD_USDT_USDT      +0.0049%    1.4801%    13.6700  1081.7400  115.1%      0.89%      355,161      3373
+ALGO_USDT_USDT      -0.0020%    1.0254%    -0.1500    14.9300  79.7%       0.94%    2,659,075      4301
+ALICE_USDT_USDT     -0.0031%    1.2820%     2.0700    65.7200  99.7%       0.80%      228,610      3031
+ANKR_USDT_USDT      -0.0020%    1.0968%     2.5400   116.4300  85.3%       0.67%    5,638,620      3465
+APE_USDT_USDT       -0.0035%    1.2541%     1.8900   120.1200  97.5%       1.07%    1,084,223      3069
+API3_USDT_USDT      +0.0003%    1.3507%     4.7600   205.2300  105.0%      1.65%      186,957      3103
+APT_USDT_USDT       -0.0017%    1.0924%     0.2200    17.5700  85.0%       1.35%      495,818      3840
+ARPA_USDT_USDT      +0.0021%    1.2200%     2.4400    63.3600  94.9%       0.65%    3,599,122      3288
+AR_USDT_USDT        -0.0002%    1.2740%     0.2800    19.7500  99.1%       1.10%       32,404      4962
+ASTR_USDT_USDT      -0.0025%    1.1892%     5.2100   319.2600  92.5%       0.76%    2,270,240      4003
+ATOM_USDT_USDT      -0.0032%    0.9442%    -0.1800    30.1500  73.4%       0.87%      184,150      4287
+AVAX_USDT_USDT      -0.0013%    1.0336%    -0.1300    28.9200  80.4%       0.79%      162,849      4516
+AXS_USDT_USDT       -0.0051%    1.1267%     1.3900    64.9200  87.6%       0.91%      191,195      2948
+BAND_USDT_USDT      -0.0010%    1.1663%     1.2000    40.2700  90.7%       1.45%       67,144      3383
+BAT_USDT_USDT       -0.0024%    0.9742%    -0.0800    12.6100  75.8%       0.94%      398,650      4224
+BCH_USDT_USDT       +0.0025%    0.8805%     0.7900    23.5700  68.5%       0.91%        5,723      4098
+BEL_USDT_USDT       +0.0030%    1.2941%     0.6100    94.5400  100.6%      0.87%      317,974      3190
+BICO_USDT_USDT      -0.0035%    1.3770%     1.0500    35.9700  107.1%      2.62%      649,168      2026
+BNB_USDT_USDT       +0.0027%    0.6349%    -0.0900    22.9900  49.4%       0.50%        6,019      4377
+BOBA_USDT_USDT      -0.0041%    1.2224%     3.4300    76.5000  95.1%       2.15%      331,321      3242
+BSV_USDT_USDT       -0.0002%    0.9796%     1.3700    46.5300  76.2%       1.04%        3,643      4045
+BTC_USDT_USDT       +0.0027%    0.5403%    -0.0400    13.6400  42.0%       0.67%        4,797      4697
+C98_USDT_USDT       -0.0049%    1.2241%    -0.4300    58.7900  95.2%       0.98%    1,218,834      3716
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Distributions & Volatility: 4H                                                                                       │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol              Mean Ret    Std Dev       Skew      Kurt  Ann.Vol%    ATR%        Avg Vol    Spikes
+------------------  ----------  ---------  -------  --------  ----------  ------  -----------  --------
+1000BTT_USDT_USDT   -0.0046%    1.7924%    18.1700  927.4600  69.7%       1.18%   239,908,835       921
+1000LUNC_USDT_USDT  +0.0009%    2.3480%     2.2100   52.6900  91.3%       1.65%    15,499,802       744
+1000XEC_USDT_USDT   -0.0076%    1.9877%     2.0300   35.8900  77.3%       1.57%     9,938,920       908
+1INCH_USDT_USDT     -0.0143%    1.8990%    -0.0200   11.4000  73.8%       1.46%     2,307,343       956
+AAVE_USDT_USDT      +0.0147%    2.1011%     0.2400    5.2300  81.7%       2.33%        47,561      1158
+ACH_USDT_USDT       +0.0089%    2.5141%     2.3900   40.7400  97.8%       1.92%    30,753,876       958
+ADA_USDT_USDT       -0.0014%    1.8553%     0.4800   17.0100  72.1%       2.11%    39,580,992      1100
+AGLD_USDT_USDT      +0.0182%    2.9072%     7.8200  321.9500  113.0%      2.33%     1,420,643       868
+ALGO_USDT_USDT      -0.0091%    2.0006%     0.0700    7.7700  77.8%       1.77%    10,636,300      1055
+ALICE_USDT_USDT     -0.0140%    2.5219%     3.0500   77.2800  98.1%       2.11%       914,440       720
+ANKR_USDT_USDT      -0.0100%    2.1165%     2.4300   61.5300  82.3%       1.62%    22,554,479       900
+APE_USDT_USDT       -0.0156%    2.4486%     1.6700   43.5400  95.2%       2.16%     4,336,561       705
+API3_USDT_USDT      -0.0000%    2.6782%     3.4400   66.9200  104.1%      2.78%       747,772       800
+APT_USDT_USDT       -0.0063%    2.1747%     0.5800   11.9600  84.6%       2.08%     1,983,155       952
+ARPA_USDT_USDT      +0.0060%    2.3413%     2.1100   50.0500  91.0%       1.93%    14,396,487       858
+AR_USDT_USDT        -0.0032%    2.4769%     1.3300   29.5500  96.3%       2.19%       129,617      1243
+ASTR_USDT_USDT      -0.0132%    2.2354%     3.1400   95.6800  86.9%       1.69%     9,080,492       982
+ATOM_USDT_USDT      -0.0141%    1.8088%    -0.4400   10.0800  70.3%       1.66%       736,599      1006
+AVAX_USDT_USDT      -0.0064%    2.0052%    -0.0800    7.2100  78.0%       1.51%       651,394      1091
+AXS_USDT_USDT       -0.0216%    2.1921%     0.7600   15.6600  85.2%       1.83%       764,780       730
+BAND_USDT_USDT      -0.0052%    2.2979%     1.7100   35.0000  89.4%       5.07%       268,554       827
+BAT_USDT_USDT       -0.0103%    1.8973%    -0.0400    6.8900  73.8%       1.99%     1,594,601      1097
+BCH_USDT_USDT       +0.0095%    1.7427%     1.1200   17.7400  67.8%       1.73%        22,892      1016
+BEL_USDT_USDT       +0.0115%    2.5996%     2.1600   61.7100  101.1%      2.07%     1,271,794       799
+BICO_USDT_USDT      -0.0160%    2.6910%     1.2300   26.0800  104.6%      5.33%     2,596,672       480
+BNB_USDT_USDT       +0.0104%    1.2283%    -0.1500   10.5300  47.8%       0.90%        24,077      1046
+BOBA_USDT_USDT      -0.0173%    2.3982%     2.7700   41.4500  93.3%       3.23%     1,325,285       897
+BSV_USDT_USDT       -0.0030%    1.8522%     0.6900   16.3000  72.0%       2.17%        14,573      1041
+BTC_USDT_USDT       +0.0106%    1.0562%     0.0400    7.2500  41.1%       0.97%        19,187      1125
+C98_USDT_USDT       -0.0209%    2.4234%     1.5900   56.5000  94.2%       2.35%     4,875,336       934
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Distributions & Volatility: 1D                                                                                       │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol              Mean Ret    Std Dev       Skew      Kurt  Ann.Vol%    ATR%          Avg Vol    Spikes
+------------------  ----------  ---------  -------  --------  ----------  ------  -------------  --------
+1000BTT_USDT_USDT   -0.0383%    4.0711%     5.2000   77.8500  64.6%       3.24%   1,439,162,036       152
+1000LUNC_USDT_USDT  +0.0138%    5.8793%     2.9500   35.7500  93.3%       8.26%      92,977,478       123
+1000XEC_USDT_USDT   -0.0461%    5.0036%     2.9500   39.7200  79.4%       7.03%      59,621,114       160
+1INCH_USDT_USDT     -0.0956%    4.4923%     0.1600    4.6700  71.3%       5.43%      13,844,056       161
+AAVE_USDT_USDT      +0.0850%    5.1221%     0.4700    3.5900  81.3%       9.10%         285,365       165
+ACH_USDT_USDT       +0.0451%    6.0445%     1.9700   18.2600  96.0%       7.36%     184,484,978       171
+ADA_USDT_USDT       -0.0110%    4.6485%     2.4100   36.2400  73.8%       9.32%     237,485,954       158
+AGLD_USDT_USDT      +0.1241%    7.2412%     2.0500   18.8400  115.0%      6.62%       8,522,077       146
+ALGO_USDT_USDT      -0.0665%    4.7112%     0.4400    5.0700  74.8%       6.93%      63,817,802       162
+ALICE_USDT_USDT     -0.0943%    5.9772%     0.9200   10.1200  94.9%       8.18%       5,486,638       124
+ANKR_USDT_USDT      -0.0802%    4.7361%     0.4300    8.5100  75.2%       5.73%     135,326,877       153
+APE_USDT_USDT       -0.1067%    6.0239%     2.1400   30.3300  95.6%       7.03%      26,019,364        93
+API3_USDT_USDT      -0.0274%    6.3270%     2.4400   21.4600  100.4%      7.90%       4,486,177       144
+APT_USDT_USDT       -0.0503%    5.2630%     1.2500   11.3300  83.5%       8.93%      11,898,933       154
+ARPA_USDT_USDT      +0.0226%    5.5709%     2.0200   21.3000  88.4%       5.58%      86,351,844       141
+AR_USDT_USDT        -0.0232%    6.0667%     0.8500    5.8600  96.3%       9.18%         777,703       198
+ASTR_USDT_USDT      -0.1135%    4.7946%    -0.3500    8.5200  76.1%       6.26%      54,477,314       155
+ATOM_USDT_USDT      -0.0912%    4.3979%     0.0900    3.8100  69.8%       6.52%       4,419,596       131
+AVAX_USDT_USDT      -0.0445%    4.8303%     0.0200    3.2700  76.7%       6.35%       3,908,365       141
+AXS_USDT_USDT       -0.1277%    5.4505%     1.1100   10.1400  86.5%       7.68%       4,588,679       106
+BAND_USDT_USDT      -0.0171%    6.1020%     5.2600   96.3300  96.9%       8.76%       1,610,999       127
+BAT_USDT_USDT       -0.0719%    4.4487%     0.1500    3.2800  70.6%       7.00%       9,567,608       182
+BCH_USDT_USDT       +0.0588%    4.4243%     2.1700   23.5400  70.2%       8.73%         137,351       160
+BEL_USDT_USDT       +0.0386%    5.8887%     0.9700   12.5000  93.5%       6.76%       7,629,934       140
+BICO_USDT_USDT      -0.0948%    6.7354%     2.3400   26.0100  106.9%      16.78%     15,580,030        80
+BNB_USDT_USDT       +0.0595%    2.9486%    -0.0800    5.0600  46.8%       3.71%         144,464       166
+BOBA_USDT_USDT      -0.0877%    6.6095%     6.8700  127.7300  104.9%      6.94%       7,949,238       159
+BSV_USDT_USDT       -0.0160%    4.7019%     2.2900   21.5400  74.6%       7.08%          87,437       190
+BTC_USDT_USDT       +0.0647%    2.6638%     0.0900    4.4300  42.3%       3.98%         115,124       117
+C98_USDT_USDT       -0.1341%    5.7684%     0.2700    6.8700  91.6%       8.42%      29,252,017       149
+
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                       SECTION 5: CORRELATIONS & RELATIONSHIPS                                        ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Correlation Matrix & Beta (1H)                                                                                       │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+  ▸ Top 10 Highly Correlated Pairs (>0.8) [1H]
+  ──────────────────────────────────────────────
+Asset A         Asset B           Pearson Corr
+--------------  --------------  --------------
+MANA_USDT_USDT  SAND_USDT_USDT          0.8972
+BTC_USDT_USDT   ETH_USDT_USDT           0.8458
+NEO_USDT_USDT   QTUM_USDT_USDT          0.8141
+
+  ▸ Beta Exposure vs BTC_USDT_USDT [1H]
+  ───────────────────────────────────────
+Symbol              Beta vs BTC  Classification
+----------------  -------------  -----------------
+LDO_USDT_USDT            1.4930  High (Aggressive)
+WOO_USDT_USDT            1.4870  High (Aggressive)
+GALA_USDT_USDT           1.4770  High (Aggressive)
+PEOPLE_USDT_USDT         1.4750  High (Aggressive)
+OP_USDT_USDT             1.4480  High (Aggressive)
+INJ_USDT_USDT            1.4460  High (Aggressive)
+RSR_USDT_USDT            1.4360  High (Aggressive)
+YGG_USDT_USDT            1.4240  High (Aggressive)
+RUNE_USDT_USDT           1.4190  High (Aggressive)
+IMX_USDT_USDT            1.4160  High (Aggressive)
+MAGIC_USDT_USDT          1.4130  High (Aggressive)
+SOL_USDT_USDT            1.4130  High (Aggressive)
+ENS_USDT_USDT            1.4110  High (Aggressive)
+ROSE_USDT_USDT           1.4080  High (Aggressive)
+NEAR_USDT_USDT           1.4030  High (Aggressive)
+
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                           SECTION 6: CYCLES & SEASONALITY                                            ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Day-of-Week Seasonality [1D] (Top 10 Assets)                                                                         │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol              Mon     Tue     Wed     Thu     Fri     Optimal Day    Weakest Day
+------------------  ------  ------  ------  ------  ------  -------------  -------------
+1000BTT_USDT_USDT   -0.16%  -0.48%  +0.14%  -0.34%  +0.09%  Sat            Tue
+1000LUNC_USDT_USDT  +0.06%  -0.31%  -0.37%  -0.55%  +1.02%  Fri            Thu
+1000XEC_USDT_USDT   +0.23%  -0.70%  +0.04%  -0.45%  +0.92%  Fri            Tue
+1INCH_USDT_USDT     -0.16%  -0.28%  +0.24%  -0.51%  +0.36%  Fri            Thu
+AAVE_USDT_USDT      +0.60%  -0.10%  +0.51%  -0.27%  +0.27%  Mon            Thu
+ACH_USDT_USDT       +0.77%  -0.13%  +0.16%  -0.20%  +0.21%  Mon            Sat
+ADA_USDT_USDT       -0.09%  -0.22%  +0.24%  -0.34%  +0.26%  Fri            Thu
+AGLD_USDT_USDT      -0.07%  +0.02%  +0.39%  -0.54%  +0.18%  Sat            Thu
+ALGO_USDT_USDT      -0.12%  -0.34%  -0.13%  -0.34%  +0.62%  Fri            Thu
+ALICE_USDT_USDT     -0.11%  -0.22%  -0.31%  -0.59%  +0.47%  Fri            Thu
+
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                       SECTION 7: ANOMALIES & OUTLIER DETECTION                                       ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Anomaly Audit: 15m                                                                                                   │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol                Spikes (Z>3)    Crashes (Z<-3)    Vol Anomalies  Severity
+------------------  --------------  ----------------  ---------------  ----------
+BTC_USDT_USDT                 1413              1446             9644  EXTREME
+ETH_USDT_USDT                 1356              1378            10165  EXTREME
+DOGE_USDT_USDT                1367              1333            10927  EXTREME
+ZEC_USDT_USDT                 1388              1268            12281  EXTREME
+BCH_USDT_USDT                 1357              1276             9997  EXTREME
+ETC_USDT_USDT                 1337              1241            10575  EXTREME
+DASH_USDT_USDT                1318              1256            10378  EXTREME
+BOBA_USDT_USDT                1288              1285             8525  EXTREME
+CVC_USDT_USDT                 1277              1294             9416  EXTREME
+WAVES_USDT_USDT               1328              1237            10416  EXTREME
+BNB_USDT_USDT                 1182              1371             9745  EXTREME
+ZEN_USDT_USDT                 1329              1219            11178  EXTREME
+RUNE_USDT_USDT                1258              1281             9676  EXTREME
+YFI_USDT_USDT                 1227              1310             9767  EXTREME
+BAT_USDT_USDT                 1248              1276            10499  EXTREME
+SHIB1000_USDT_USDT            1276              1234            10129  EXTREME
+KNC_USDT_USDT                 1226              1278             9584  EXTREME
+XLM_USDT_USDT                 1312              1184            10152  EXTREME
+TRX_USDT_USDT                 1102              1387             8821  EXTREME
+AVAX_USDT_USDT                1241              1231             9487  EXTREME
+HNT_USDT_USDT                 1324              1143             7562  EXTREME
+ATOM_USDT_USDT                1216              1242             9002  EXTREME
+ENS_USDT_USDT                 1338              1112            10707  EXTREME
+XRP_USDT_USDT                 1258              1192             9558  EXTREME
+HBAR_USDT_USDT                1283              1165            10802  EXTREME
+ICP_USDT_USDT                 1271              1172            10114  EXTREME
+LRC_USDT_USDT                 1263              1180             7862  EXTREME
+XMR_USDT_USDT                 1134              1306             9015  EXTREME
+CRO_USDT_USDT                 1188              1251             8992  EXTREME
+NEAR_USDT_USDT                1284              1155             9526  EXTREME
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Anomaly Audit: 30m                                                                                                   │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol                Spikes (Z>3)    Crashes (Z<-3)    Vol Anomalies  Severity
+------------------  --------------  ----------------  ---------------  ----------
+BTC_USDT_USDT                  742               803             4677  EXTREME
+ETH_USDT_USDT                  729               786             4882  EXTREME
+DOGE_USDT_USDT                 735               661             5340  EXTREME
+ZEC_USDT_USDT                  723               667             6054  EXTREME
+BCH_USDT_USDT                  707               676             4919  EXTREME
+XRP_USDT_USDT                  695               680             4665  EXTREME
+YFI_USDT_USDT                  661               703             4764  EXTREME
+DASH_USDT_USDT                 699               649             5091  EXTREME
+BNB_USDT_USDT                  610               728             4690  EXTREME
+ETC_USDT_USDT                  680               657             5234  EXTREME
+RUNE_USDT_USDT                 678               633             4736  EXTREME
+AVAX_USDT_USDT                 671               634             4496  EXTREME
+LTC_USDT_USDT                  620               685             4860  EXTREME
+NEAR_USDT_USDT                 680               619             4584  EXTREME
+KNC_USDT_USDT                  644               648             4729  EXTREME
+TRX_USDT_USDT                  572               720             4258  EXTREME
+BAT_USDT_USDT                  642               649             5135  EXTREME
+HNT_USDT_USDT                  708               575             3638  EXTREME
+ZEN_USDT_USDT                  667               608             5595  EXTREME
+SHIB1000_USDT_USDT             668               605             4942  EXTREME
+XTZ_USDT_USDT                  605               666             4281  EXTREME
+ATOM_USDT_USDT                 603               665             4205  EXTREME
+ALGO_USDT_USDT                 645               617             4773  EXTREME
+WAVES_USDT_USDT                678               584             5250  EXTREME
+AAVE_USDT_USDT                 666               593             4882  EXTREME
+BOBA_USDT_USDT                 676               582             4240  EXTREME
+LINK_USDT_USDT                 648               607             4406  EXTREME
+XLM_USDT_USDT                  640               613             4994  EXTREME
+HBAR_USDT_USDT                 660               589             5316  EXTREME
+ICP_USDT_USDT                  673               573             4907  EXTREME
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Anomaly Audit: 1H                                                                                                    │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol                Spikes (Z>3)    Crashes (Z<-3)    Vol Anomalies  Severity
+------------------  --------------  ----------------  ---------------  ----------
+BTC_USDT_USDT                  407               428             2179  EXTREME
+ETH_USDT_USDT                  375               413             2290  EXTREME
+DOGE_USDT_USDT                 387               356             2590  EXTREME
+BNB_USDT_USDT                  328               399             2235  EXTREME
+ETC_USDT_USDT                  380               347             2652  EXTREME
+BCH_USDT_USDT                  369               348             2450  EXTREME
+AAVE_USDT_USDT                 369               345             2256  EXTREME
+ZEC_USDT_USDT                  382               332             2994  EXTREME
+AVAX_USDT_USDT                 365               343             2118  EXTREME
+XRP_USDT_USDT                  361               342             2238  EXTREME
+YFI_USDT_USDT                  344               359             2304  EXTREME
+XLM_USDT_USDT                  359               343             2449  EXTREME
+SHIB1000_USDT_USDT             352               347             2408  EXTREME
+LTC_USDT_USDT                  328               369             2324  EXTREME
+SLP_USDT_USDT                  369               325             2282  EXTREME
+CVC_USDT_USDT                  348               338             2349  EXTREME
+ATOM_USDT_USDT                 329               356             1929  EXTREME
+LINK_USDT_USDT                 328               356             2084  EXTREME
+XTZ_USDT_USDT                  307               370             2024  EXTREME
+STX_USDT_USDT                  371               305             2922  EXTREME
+WAVES_USDT_USDT                370               306             2630  EXTREME
+ZEN_USDT_USDT                  356               319             2818  EXTREME
+ICP_USDT_USDT                  354               320             2370  EXTREME
+DASH_USDT_USDT                 356               316             2471  EXTREME
+RUNE_USDT_USDT                 330               341             2336  EXTREME
+CHZ_USDT_USDT                  328               342             2790  EXTREME
+NEAR_USDT_USDT                 353               317             2175  EXTREME
+ENS_USDT_USDT                  369               300             2570  EXTREME
+NEO_USDT_USDT                  326               343             2437  EXTREME
+BAT_USDT_USDT                  336               329             2595  EXTREME
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Anomaly Audit: 4H                                                                                                    │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol                Spikes (Z>3)    Crashes (Z<-3)    Vol Anomalies  Severity
+------------------  --------------  ----------------  ---------------  ----------
+ETH_USDT_USDT                   95               111              475  EXTREME
+BTC_USDT_USDT                   99                96              413  EXTREME
+AAVE_USDT_USDT                 106                80              489  EXTREME
+BCH_USDT_USDT                  113                73              575  EXTREME
+SUSHI_USDT_USDT                103                82              604  EXTREME
+ETC_USDT_USDT                  105                79              645  EXTREME
+WAVES_USDT_USDT                115                67              671  EXTREME
+YFI_USDT_USDT                   90                91              546  EXTREME
+SHIB1000_USDT_USDT             100                80              573  EXTREME
+BSV_USDT_USDT                  105                73              660  EXTREME
+ATOM_USDT_USDT                  90                86              373  EXTREME
+BNB_USDT_USDT                   86                90              495  EXTREME
+XRP_USDT_USDT                  112                64              522  EXTREME
+RUNE_USDT_USDT                 100                75              569  EXTREME
+ZEC_USDT_USDT                  106                69              765  EXTREME
+AVAX_USDT_USDT                  93                81              434  EXTREME
+LRC_USDT_USDT                   95                79              422  EXTREME
+BAT_USDT_USDT                   87                86              663  EXTREME
+SLP_USDT_USDT                  109                64              560  EXTREME
+CRO_USDT_USDT                   97                75              492  EXTREME
+GMT_USDT_USDT                   93                78              472  EXTREME
+LINK_USDT_USDT                  92                79              441  EXTREME
+SAND_USDT_USDT                  88                83              488  EXTREME
+CHZ_USDT_USDT                   84                86              701  EXTREME
+CRV_USDT_USDT                   97                72              680  EXTREME
+LTC_USDT_USDT                   85                84              542  EXTREME
+SOL_USDT_USDT                   92                77              368  EXTREME
+DOT_USDT_USDT                   90                77              564  EXTREME
+GALA_USDT_USDT                  95                71              534  EXTREME
+JST_USDT_USDT                   85                81              572  EXTREME
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Anomaly Audit: 1D                                                                                                    │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol                Spikes (Z>3)    Crashes (Z<-3)    Vol Anomalies  Severity
+------------------  --------------  ----------------  ---------------  ----------
+TRB_USDT_USDT                   26                11              110  EXTREME
+ETH_USDT_USDT                   19                14               32  SEVERE
+BTC_USDT_USDT                   19                12               28  EXTREME
+ETC_USDT_USDT                   21                10               98  EXTREME
+PEOPLE_USDT_USDT                24                 7              106  EXTREME
+ILV_USDT_USDT                   21                 9               79  SEVERE
+SHIB1000_USDT_USDT              21                 9               78  EXTREME
+YFI_USDT_USDT                   16                14               84  EXTREME
+BNB_USDT_USDT                   16                13               67  EXTREME
+DOGE_USDT_USDT                  19                10               78  SEVERE
+ENS_USDT_USDT                   21                 8               93  EXTREME
+LTC_USDT_USDT                   13                16               66  SEVERE
+PAXG_USDT_USDT                  15                14              133  EXTREME
+ARPA_USDT_USDT                  18                10               95  EXTREME
+ATOM_USDT_USDT                  16                12               42  SEVERE
+AXS_USDT_USDT                   20                 8               72  EXTREME
+CHZ_USDT_USDT                   15                13              108  SEVERE
+RUNE_USDT_USDT                  18                10               91  EXTREME
+RVN_USDT_USDT                   19                 9               74  EXTREME
+XMR_USDT_USDT                   14                14               60  EXTREME
+XRP_USDT_USDT                   20                 8               77  EXTREME
+ZEN_USDT_USDT                   18                10              109  EXTREME
+CRV_USDT_USDT                   18                 9              109  SEVERE
+ICP_USDT_USDT                   21                 6               80  EXTREME
+STORJ_USDT_USDT                 17                10              114  EXTREME
+SUN_USDT_USDT                   16                11               79  EXTREME
+TWT_USDT_USDT                   13                14               98  SEVERE
+AGLD_USDT_USDT                  20                 6              100  EXTREME
+BEL_USDT_USDT                   15                11               87  EXTREME
+BOBA_USDT_USDT                  18                 8               87  EXTREME
+
+  ▸ Flash Crashes & Extreme Pumps Registry (Z > 5)
+  ──────────────────────────────────────────────────
+Symbol             TF    Timestamp         Return %    Classification
+-----------------  ----  ----------------  ----------  ----------------
+1000BTT_USDT_USDT  15m   2022-02-25 12:45  +2.32%      PUMP
+1000BTT_USDT_USDT  15m   2022-02-25 17:00  -4.03%      CRASH
+1000BTT_USDT_USDT  15m   2022-02-25 17:15  +4.03%      PUMP
+1000BTT_USDT_USDT  15m   2022-02-26 00:30  +2.63%      PUMP
+1000BTT_USDT_USDT  15m   2022-02-26 10:45  -4.78%      CRASH
+1000BTT_USDT_USDT  15m   2022-02-26 11:00  +5.02%      PUMP
+1000BTT_USDT_USDT  15m   2022-02-27 19:30  +3.78%      PUMP
+1000BTT_USDT_USDT  15m   2022-02-27 19:45  -5.33%      CRASH
+1000BTT_USDT_USDT  15m   2022-02-27 23:00  -2.91%      CRASH
+1000BTT_USDT_USDT  15m   2022-02-27 23:15  +2.28%      PUMP
+1000BTT_USDT_USDT  15m   2022-03-06 23:15  -2.04%      CRASH
+1000BTT_USDT_USDT  15m   2022-03-24 17:45  +2.80%      PUMP
+1000BTT_USDT_USDT  15m   2022-03-27 20:15  +5.69%      PUMP
+1000BTT_USDT_USDT  15m   2022-03-28 06:00  -2.27%      CRASH
+1000BTT_USDT_USDT  15m   2022-03-31 00:30  +3.74%      PUMP
+
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                      SECTION 8: SUPPORT/RESISTANCE & KEY LEVELS                                      ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Calculated Pivot & Key Structural Levels (1D)                                                                        │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  1000BTT_USDT_USDT [1D] Last: 0.0003 | Pivot: 0.0003 | R1: 0.0003 | S1: 0.0003 | R2: 0.0003 | S2: 0.0003
+  1000LUNC_USDT_USDT [1D] Last: 0.0508 | Pivot: 0.0512 | R1: 0.0525 | S1: 0.0493 | R2: 0.0544 | S2: 0.0480
+  1000XEC_USDT_USDT [1D] Last: 0.0069 | Pivot: 0.0068 | R1: 0.0070 | S1: 0.0066 | R2: 0.0072 | S2: 0.0064
+  1INCH_USDT_USDT [1D] Last: 0.0885 | Pivot: 0.0879 | R1: 0.0899 | S1: 0.0850 | R2: 0.0928 | S2: 0.0831
+  AAVE_USDT_USDT  [1D] Last: 124.0400 | Pivot: 124.4667 | R1: 128.1833 | S1: 118.6133 | R2: 134.0367 | S2: 114.8967
+  ACH_USDT_USDT   [1D] Last: 0.0048 | Pivot: 0.0048 | R1: 0.0050 | S1: 0.0046 | R2: 0.0052 | S2: 0.0044
+  ADA_USDT_USDT   [1D] Last: 0.1978 | Pivot: 0.1959 | R1: 0.2027 | S1: 0.1858 | R2: 0.2128 | S2: 0.1790
+  AGLD_USDT_USDT  [1D] Last: 0.1640 | Pivot: 0.1639 | R1: 0.1689 | S1: 0.1563 | R2: 0.1765 | S2: 0.1513
+  ALGO_USDT_USDT  [1D] Last: 0.0856 | Pivot: 0.0855 | R1: 0.0877 | S1: 0.0822 | R2: 0.0909 | S2: 0.0800
+  ALICE_USDT_USDT [1D] Last: 0.1338 | Pivot: 0.1354 | R1: 0.1397 | S1: 0.1290 | R2: 0.1461 | S2: 0.1248
+
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                      SECTION 9: MOMENTUM & OSCILLATOR ANALYSIS                                       ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Momentum Matrix: 15m                                                                                                 │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol             RSI (14)  MACD State      Composite Score  Regime
+---------------  ----------  ------------  -----------------  -----------
+ICX_USDT_USDT       84.6000  Bullish                 76.9000  Strong Bull
+QTUM_USDT_USDT      84.1000  Bullish                 76.2000  Strong Bull
+GMX_USDT_USDT       80.3000  Bullish                 70.4000  Strong Bull
+OP_USDT_USDT        77.9000  Bullish                 66.8000  Strong Bull
+CHR_USDT_USDT       77.8000  Bullish                 66.6000  Strong Bull
+EGLD_USDT_USDT      73.7000  Bullish                 60.5000  Strong Bull
+APT_USDT_USDT       73.6000  Bullish                 60.3000  Strong Bull
+GMT_USDT_USDT       73.0000  Bullish                 59.6000  Strong Bull
+TLM_USDT_USDT       71.2000  Bullish                 56.8000  Strong Bull
+COMP_USDT_USDT      71.0000  Bullish                 56.5000  Strong Bull
+SAND_USDT_USDT      70.6000  Bullish                 56.0000  Strong Bull
+NEAR_USDT_USDT      70.5000  Bullish                 55.8000  Strong Bull
+MTL_USDT_USDT       69.8000  Bullish                 54.7000  Strong Bull
+SUSHI_USDT_USDT     69.1000  Bullish                 53.7000  Strong Bull
+LUNA2_USDT_USDT     68.1000  Bullish                 52.1000  Strong Bull
+ALICE_USDT_USDT     67.5000  Bullish                 51.2000  Strong Bull
+NEO_USDT_USDT       66.7000  Bullish                 50.0000  Mild Bull
+SLP_USDT_USDT       66.7000  Bullish                 50.0000  Strong Bull
+ENJ_USDT_USDT       66.0000  Bullish                 49.1000  Mild Bull
+WAVES_USDT_USDT     66.1000  Bullish                 49.1000  Mild Bull
+APE_USDT_USDT       64.7000  Bullish                 47.1000  Mild Bull
+CRO_USDT_USDT       64.7000  Bullish                 47.1000  Mild Bull
+KNC_USDT_USDT       63.6000  Bullish                 45.5000  Mild Bull
+COTI_USDT_USDT      61.0000  Bullish                 41.5000  Mild Bull
+C98_USDT_USDT       60.0000  Bullish                 40.0000  Mild Bull
+1INCH_USDT_USDT     59.6000  Bullish                 39.3000  Mild Bull
+STG_USDT_USDT       59.3000  Bullish                 38.9000  Mild Bull
+FIL_USDT_USDT       58.4000  Bullish                 37.6000  Mild Bull
+IOTX_USDT_USDT      58.2000  Bullish                 37.3000  Mild Bull
+CKB_USDT_USDT       57.3000  Bullish                 36.0000  Mild Bull
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Momentum Matrix: 30m                                                                                                 │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol                RSI (14)  MACD State      Composite Score  Regime
+------------------  ----------  ------------  -----------------  -----------
+OP_USDT_USDT           81.9000  Bullish                 72.9000  Strong Bull
+CRV_USDT_USDT          81.8000  Bullish                 72.7000  Strong Bull
+JST_USDT_USDT          77.5000  Bullish                 66.3000  Strong Bull
+NEAR_USDT_USDT         77.2000  Bullish                 65.7000  Strong Bull
+APT_USDT_USDT          74.5000  Bullish                 61.7000  Strong Bull
+FIL_USDT_USDT          74.4000  Bullish                 61.7000  Strong Bull
+1000BTT_USDT_USDT      72.1000  Bullish                 58.1000  Strong Bull
+CHR_USDT_USDT          70.1000  Bullish                 55.2000  Strong Bull
+UNI_USDT_USDT          69.2000  Bullish                 53.8000  Strong Bull
+LUNA2_USDT_USDT        68.7000  Bullish                 53.0000  Strong Bull
+APE_USDT_USDT          68.6000  Bullish                 52.9000  Strong Bull
+COMP_USDT_USDT         67.5000  Bullish                 51.3000  Strong Bull
+QTUM_USDT_USDT         67.5000  Bullish                 51.2000  Strong Bull
+AGLD_USDT_USDT         67.3000  Bullish                 51.0000  Strong Bull
+DOT_USDT_USDT          67.2000  Bullish                 50.9000  Strong Bull
+GMX_USDT_USDT          67.2000  Bullish                 50.9000  Strong Bull
+GMT_USDT_USDT          66.4000  Bullish                 49.7000  Mild Bull
+AAVE_USDT_USDT         66.2000  Bullish                 49.3000  Mild Bull
+C98_USDT_USDT          65.4000  Bullish                 48.1000  Mild Bull
+PAXG_USDT_USDT         65.4000  Bullish                 48.1000  Mild Bull
+1000LUNC_USDT_USDT     64.5000  Bullish                 46.8000  Mild Bull
+ICX_USDT_USDT          64.4000  Bullish                 46.6000  Mild Bull
+TLM_USDT_USDT          64.3000  Bullish                 46.4000  Mild Bull
+WAVES_USDT_USDT        63.3000  Bullish                 45.0000  Mild Bull
+THETA_USDT_USDT        62.9000  Bullish                 44.4000  Mild Bull
+NEO_USDT_USDT          62.0000  Bullish                 43.0000  Mild Bull
+SHIB1000_USDT_USDT     62.0000  Bullish                 43.0000  Mild Bull
+EGLD_USDT_USDT         61.8000  Bullish                 42.7000  Mild Bull
+KSM_USDT_USDT          61.6000  Bullish                 42.4000  Mild Bull
+FLOW_USDT_USDT         61.5000  Bullish                 42.3000  Mild Bull
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Momentum Matrix: 1H                                                                                                  │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol             RSI (14)  MACD State      Composite Score  Regime
+---------------  ----------  ------------  -----------------  -----------
+OP_USDT_USDT        81.8000  Bullish                 72.8000  Strong Bull
+CRV_USDT_USDT       77.2000  Bullish                 65.8000  Strong Bull
+JST_USDT_USDT       73.9000  Bullish                 60.8000  Strong Bull
+SAND_USDT_USDT      71.5000  Bullish                 57.3000  Strong Bull
+MINA_USDT_USDT      71.1000  Bullish                 56.6000  Strong Bull
+API3_USDT_USDT      69.5000  Bullish                 54.2000  Strong Bull
+NEAR_USDT_USDT      68.6000  Bullish                 52.9000  Strong Bull
+APT_USDT_USDT       68.5000  Bullish                 52.8000  Strong Bull
+TWT_USDT_USDT       67.5000  Bullish                 51.3000  Strong Bull
+JASMY_USDT_USDT     67.1000  Bullish                 50.6000  Strong Bull
+RUNE_USDT_USDT      66.7000  Bullish                 50.0000  Mild Bull
+BICO_USDT_USDT      65.9000  Bullish                 48.9000  Mild Bull
+ZEN_USDT_USDT       65.4000  Bullish                 48.1000  Mild Bull
+FLOW_USDT_USDT      65.0000  Bullish                 47.4000  Mild Bull
+WAVES_USDT_USDT     62.5000  Bullish                 43.7000  Mild Bull
+GMX_USDT_USDT       61.6000  Bullish                 42.4000  Mild Bull
+COMP_USDT_USDT      61.3000  Bullish                 42.0000  Mild Bull
+BNB_USDT_USDT       61.1000  Bullish                 41.6000  Mild Bull
+ZEC_USDT_USDT       61.0000  Bullish                 41.5000  Mild Bull
+ETH_USDT_USDT       60.2000  Bullish                 40.3000  Mild Bull
+GMT_USDT_USDT       59.9000  Bullish                 39.9000  Mild Bull
+ICX_USDT_USDT       59.1000  Bullish                 38.7000  Mild Bull
+DOT_USDT_USDT       58.1000  Bullish                 37.2000  Mild Bull
+FIL_USDT_USDT       57.8000  Bullish                 36.8000  Mild Bull
+MANA_USDT_USDT      57.9000  Bullish                 36.8000  Mild Bull
+SUSHI_USDT_USDT     57.6000  Bullish                 36.5000  Mild Bull
+TLM_USDT_USDT       57.6000  Bullish                 36.4000  Mild Bull
+CHR_USDT_USDT       57.5000  Bullish                 36.2000  Mild Bull
+STX_USDT_USDT       57.4000  Bullish                 36.1000  Mild Bull
+LDO_USDT_USDT       56.9000  Bullish                 35.4000  Mild Bull
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Momentum Matrix: 4H                                                                                                  │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol             RSI (14)  MACD State      Composite Score  Regime
+---------------  ----------  ------------  -----------------  -----------
+UNI_USDT_USDT       75.8000  Bullish                 63.6000  Strong Bull
+CRV_USDT_USDT       75.6000  Bullish                 63.4000  Strong Bull
+XMR_USDT_USDT       69.1000  Bullish                 53.7000  Strong Bull
+ZEN_USDT_USDT       68.8000  Bullish                 53.3000  Strong Bull
+NEAR_USDT_USDT      65.8000  Bullish                 48.7000  Mild Bull
+EGLD_USDT_USDT      65.6000  Bullish                 48.4000  Mild Bull
+OP_USDT_USDT        65.1000  Bullish                 47.7000  Mild Bull
+COMP_USDT_USDT      65.1000  Bullish                 47.6000  Mild Bull
+TWT_USDT_USDT       64.1000  Bullish                 46.1000  Mild Bull
+DASH_USDT_USDT      63.6000  Bullish                 45.3000  Mild Bull
+RUNE_USDT_USDT      62.9000  Bullish                 44.3000  Mild Bull
+IOTA_USDT_USDT      62.5000  Bullish                 43.7000  Mild Bull
+GMT_USDT_USDT       61.0000  Bullish                 41.4000  Mild Bull
+ENS_USDT_USDT       60.8000  Bullish                 41.3000  Mild Bull
+JASMY_USDT_USDT     60.0000  Bullish                 40.0000  Mild Bull
+BTC_USDT_USDT       59.0000  Bullish                 38.5000  Mild Bull
+KAVA_USDT_USDT      57.6000  Bullish                 36.3000  Mild Bull
+BOBA_USDT_USDT      57.3000  Bullish                 36.0000  Mild Bull
+MINA_USDT_USDT      57.3000  Bullish                 36.0000  Mild Bull
+BICO_USDT_USDT      57.1000  Bullish                 35.6000  Mild Bull
+SUSHI_USDT_USDT     55.9000  Bullish                 33.8000  Mild Bull
+STX_USDT_USDT       55.4000  Bullish                 33.1000  Mild Bull
+1INCH_USDT_USDT     55.3000  Bullish                 32.9000  Mild Bull
+ETH_USDT_USDT       55.0000  Bullish                 32.5000  Mild Bull
+ROSE_USDT_USDT      54.4000  Bullish                 31.6000  Mild Bull
+BCH_USDT_USDT       54.0000  Bullish                 31.0000  Mild Bull
+JST_USDT_USDT       53.4000  Bullish                 30.1000  Mild Bull
+CTC_USDT_USDT       52.1000  Bullish                 28.1000  Mild Bull
+ZIL_USDT_USDT       51.7000  Bullish                 27.5000  Mild Bull
+DUSK_USDT_USDT      51.6000  Bullish                 27.4000  Mild Bull
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Momentum Matrix: 1D                                                                                                  │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Symbol            RSI (14)  MACD State      Composite Score  Regime
+--------------  ----------  ------------  -----------------  -----------
+EGLD_USDT_USDT     89.6000  Bullish                 84.4000  Strong Bull
+MINA_USDT_USDT     87.9000  Bullish                 81.8000  Strong Bull
+UNI_USDT_USDT      82.9000  Bullish                 74.4000  Strong Bull
+XMR_USDT_USDT      81.8000  Bullish                 72.7000  Strong Bull
+STX_USDT_USDT      80.2000  Bullish                 70.3000  Strong Bull
+BTC_USDT_USDT      80.1000  Bullish                 70.1000  Strong Bull
+HNT_USDT_USDT      79.8000  Bullish                 69.7000  Strong Bull
+ZEC_USDT_USDT      79.7000  Bullish                 69.5000  Strong Bull
+MTL_USDT_USDT      79.4000  Bullish                 69.1000  Strong Bull
+VET_USDT_USDT      79.4000  Bullish                 69.1000  Strong Bull
+KAVA_USDT_USDT     77.3000  Bullish                 65.9000  Strong Bull
+SOL_USDT_USDT      77.2000  Bullish                 65.9000  Strong Bull
+DASH_USDT_USDT     76.7000  Bullish                 65.0000  Strong Bull
+ETH_USDT_USDT      76.7000  Bullish                 65.0000  Strong Bull
+TWT_USDT_USDT      75.9000  Bullish                 63.9000  Strong Bull
+BNB_USDT_USDT      75.8000  Bullish                 63.7000  Strong Bull
+CTC_USDT_USDT      75.1000  Bullish                 62.7000  Strong Bull
+ENS_USDT_USDT      74.9000  Bullish                 62.3000  Strong Bull
+ANKR_USDT_USDT     74.7000  Bullish                 62.0000  Strong Bull
+BOBA_USDT_USDT     74.0000  Bullish                 61.0000  Strong Bull
+ASTR_USDT_USDT     73.9000  Bullish                 60.8000  Strong Bull
+XRP_USDT_USDT      73.7000  Bullish                 60.6000  Strong Bull
+CELO_USDT_USDT     73.0000  Bullish                 59.6000  Strong Bull
+KSM_USDT_USDT      71.8000  Bullish                 57.7000  Strong Bull
+ZRX_USDT_USDT      71.5000  Bullish                 57.2000  Strong Bull
+ZEN_USDT_USDT      71.1000  Bullish                 56.6000  Strong Bull
+CKB_USDT_USDT      71.0000  Bullish                 56.4000  Strong Bull
+COTI_USDT_USDT     70.8000  Bullish                 56.3000  Strong Bull
+CVX_USDT_USDT      69.9000  Bullish                 54.8000  Strong Bull
+CRO_USDT_USDT      69.8000  Bullish                 54.7000  Strong Bull
+
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                  SECTION 10: CLASSIFICATIONS & TRADABILITY RANKINGS                                  ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+  #  Symbol                Tradability  Primary Trend      ADX  Volatility Class    Liquidity Tier
+---  ------------------  -------------  ---------------  -----  ------------------  ----------------
+  1  1000LUNC_USDT_USDT        75.0000  Mild Downtrend      40  High                Medium
+  2  ANKR_USDT_USDT            75.0000  Downtrend           47  High                Medium
+  3  CHZ_USDT_USDT             75.0000  Mild Downtrend      37  High                Medium
+  4  CRV_USDT_USDT             75.0000  Mild Uptrend        31  High                Medium
+  5  JST_USDT_USDT             75.0000  Mild Uptrend        42  Medium              Medium
+  6  ONT_USDT_USDT             75.0000  Downtrend           27  High                Medium
+  7  OP_USDT_USDT              75.0000  Mild Uptrend        39  High                Medium
+  8  SUN_USDT_USDT             75.0000  Downtrend           49  Medium              Medium
+  9  TRX_USDT_USDT             75.0000  Mild Downtrend      50  Medium              Medium
+ 10  ALICE_USDT_USDT           65.0000  Mild Downtrend      30  High                Low Liq
+ 11  APT_USDT_USDT             65.0000  Mild Uptrend        33  High                Low Liq
+ 12  AVAX_USDT_USDT            65.0000  Sideways            31  High                Low Liq
+ 13  DYDX_USDT_USDT            65.0000  Mild Downtrend      27  High                Medium
+ 14  FLOW_USDT_USDT            65.0000  Mild Downtrend      45  High                Medium
+ 15  ICX_USDT_USDT             65.0000  Mild Downtrend      50  Medium              Medium
+ 16  KNC_USDT_USDT             65.0000  Mild Downtrend      25  High                Low Liq
+ 17  MANA_USDT_USDT            65.0000  Mild Downtrend      28  High                Medium
+ 18  MINA_USDT_USDT            65.0000  Mild Uptrend        28  High                Medium
+ 19  NEO_USDT_USDT             65.0000  Sideways            25  Medium              Low Liq
+ 20  TWT_USDT_USDT             65.0000  Mild Uptrend        51  Medium              Low Liq
+ 21  WOO_USDT_USDT             65.0000  Downtrend           27  High                Medium
+ 22  XTZ_USDT_USDT             65.0000  Mild Downtrend      37  Medium              Low Liq
+ 23  ZEN_USDT_USDT             65.0000  Uptrend             25  High                Low Liq
+ 24  ZRX_USDT_USDT             65.0000  Downtrend           28  High                Medium
+ 25  1000BTT_USDT_USDT         60.0000  Uptrend             18  Medium              High Liq
+
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                  SECTION 11: CROSS-SYMBOL & COINTEGRATION DISCOVERY                                  ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+Asset A             Asset B          TF      ADF Stat  Cointegration           Hedge Ratio  Half Life
+------------------  ---------------  ----  ----------  --------------------  -------------  -----------
+1000LUNC_USDT_USDT  ANKR_USDT_USDT   1D       -3.1100  Moderate                     0.1272  61.0 bars
+1000LUNC_USDT_USDT  CHZ_USDT_USDT    1D       -7.1900  Yes (Mean-Reverting)         0.7851  12.6 bars
+1000LUNC_USDT_USDT  CRV_USDT_USDT    1D       -3.0400  Moderate                     2.5148  55.5 bars
+1000LUNC_USDT_USDT  ONT_USDT_USDT    1D       -3.6300  Yes (Mean-Reverting)         0.8403  46.5 bars
+1000LUNC_USDT_USDT  OP_USDT_USDT     1D       -3.0700  Moderate                     8.1255  78.2 bars
+1000LUNC_USDT_USDT  SUN_USDT_USDT    1D       -3.6100  Yes (Mean-Reverting)        -0.0586  42.2 bars
+1000LUNC_USDT_USDT  TRX_USDT_USDT    1D       -3.6400  Yes (Mean-Reverting)        -1.1302  47.3 bars
+1000LUNC_USDT_USDT  ALICE_USDT_USDT  1D       -4.7800  Yes (Mean-Reverting)         7.9616  27.4 bars
+1000LUNC_USDT_USDT  APT_USDT_USDT    1D       -3.4400  Yes (Mean-Reverting)        58.7415  52.1 bars
+1000LUNC_USDT_USDT  DYDX_USDT_USDT   1D       -3.5800  Yes (Mean-Reverting)         9.6081  60.6 bars
+
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                       SECTION 12: CONFLUENCE STRATEGY SIGNALS                                        ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Top High-Conviction Setups                                                                                           │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  ▶ ANKR_USDT_USDT — SHORT | ★★★☆☆ | TF: 1H | Tradability: 75/100
+    Entry: 0.00391 | SL: 0.00396 | TP1: 0.00385 | TP2: 0.00381
+    Evidence: Trend: Downtrend [S3], Strong ADX: 47 [S3], Bearish Momentum: -64 [S9]
+
+  ▶ CRV_USDT_USDT — LONG | ★★★☆☆ | TF: 1H | Tradability: 75/100
+    Entry: 0.33750 | SL: 0.32334 | TP1: 0.35166 | TP2: 0.36228
+    Evidence: Trend: Mild Uptrend [S3], Strong ADX: 31 [S3], Bullish Momentum: +66 [S9]
+
+  ▶ JST_USDT_USDT — LONG | ★★★☆☆ | TF: 1H | Tradability: 75/100
+    Entry: 0.09967 | SL: 0.09745 | TP1: 0.10189 | TP2: 0.10355
+    Evidence: Trend: Mild Uptrend [S3], Strong ADX: 42 [S3], Bullish Momentum: +61 [S9]
+
+  ▶ OP_USDT_USDT — LONG | ★★★☆☆ | TF: 1H | Tradability: 75/100
+    Entry: 0.09341 | SL: 0.09019 | TP1: 0.09663 | TP2: 0.09905
+    Evidence: Trend: Mild Uptrend [S3], Strong ADX: 39 [S3], Bullish Momentum: +73 [S9]
+
+  ▶ APT_USDT_USDT — LONG | ★★★☆☆ | TF: 1H | Tradability: 65/100
+    Entry: 0.53570 | SL: 0.52129 | TP1: 0.55011 | TP2: 0.56092
+    Evidence: Trend: Mild Uptrend [S3], Strong ADX: 33 [S3], Bullish Momentum: +53 [S9]
+
+  ▶ DYDX_USDT_USDT — SHORT | ★★★☆☆ | TF: 1H | Tradability: 65/100
+    Entry: 0.10714 | SL: 0.10955 | TP1: 0.10473 | TP2: 0.10293
+    Evidence: Trend: Mild Downtrend [S3], Strong ADX: 27 [S3], Bearish Momentum: -34 [S9]
+
+  ▶ MINA_USDT_USDT — LONG | ★★★☆☆ | TF: 1H | Tradability: 65/100
+    Entry: 0.06689 | SL: 0.06476 | TP1: 0.06902 | TP2: 0.07063
+    Evidence: Trend: Mild Uptrend [S3], Strong ADX: 28 [S3], Bullish Momentum: +57 [S9]
+
+  ▶ TWT_USDT_USDT — LONG | ★★★☆☆ | TF: 1H | Tradability: 65/100
+    Entry: 0.51800 | SL: 0.49147 | TP1: 0.54453 | TP2: 0.56443
+    Evidence: Trend: Mild Uptrend [S3], Strong ADX: 51 [S3], Bullish Momentum: +51 [S9]
+
+  ▶ ZEN_USDT_USDT — LONG | ★★★☆☆ | TF: 1H | Tradability: 65/100
+    Entry: 5.63000 | SL: 5.35871 | TP1: 5.90129 | TP2: 6.10475
+    Evidence: Trend: Uptrend [S3], Strong ADX: 25 [S3], Bullish Momentum: +48 [S9]
+
+  ▶ ZRX_USDT_USDT — SHORT | ★★★☆☆ | TF: 1H | Tradability: 65/100
+    Entry: 0.09498 | SL: 0.09671 | TP1: 0.09325 | TP2: 0.09196
+    Evidence: Trend: Downtrend [S3], Strong ADX: 28 [S3], Bearish Momentum: -40 [S9]
+
+
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                      SECTION 13: EXECUTIVE SUMMARY & BLUEPRINT                                       ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+  Macro Market Posture: ROTATIONAL / RANGE (50 Long Setups / 52 Short Setups)
+  Active Universe: 127 Symbols Analyzed
+
+  Portfolio Allocation Model:
+    • ANKR_USDT_USDT  [SHORT] Weight: 20% | SL: 0.0040 | Target: 0.0039
+    • CRV_USDT_USDT   [LONG] Weight: 20% | SL: 0.3233 | Target: 0.3517
+    • JST_USDT_USDT   [LONG] Weight: 20% | SL: 0.0975 | Target: 0.1019
+    • OP_USDT_USDT    [LONG] Weight: 20% | SL: 0.0902 | Target: 0.0966
+    • APT_USDT_USDT   [LONG] Weight: 20% | SL: 0.5213 | Target: 0.5501
+
+  Execution Directives:
+    1. Risk max 1-2% account balance per position.
+    2. Move Stop-Loss to Breakeven upon TP1 reach.
+    3. Avoid adding more than 3 simultaneous positions with Pearson Correlation > 0.8.
+
+  ✓ Full report automatically written to disk:
+    C:\BybitBacktest\analysis\reports\deep_analysis_20260918_112320.txt
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+║                                             Analysis Completed in 663.4s                                             ║
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
