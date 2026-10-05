@@ -7,7 +7,7 @@ An institutional-grade, multi-strategy quantitative trading system for Bybit USD
 - **Profit Factor:** 1.735
 - **Sharpe Ratio:** 1.26 (Annualized)
 - **Max Drawdown:** -12.8%
-- **2026 OOS Net Return ( Acct):** +,186.42 (+296%)
+- **2026 OOS Net Return ( Acct):** +$1,186.42 USDT (+296.6% Return)
 - **Deflated Sharpe Ratio (DSR):** 0.959 (Pass)
 - **Probability of Overfitting (PBO):** 0.010 (Pass)
 - **Backtest-to-Live Match:** 100.0% Perfect Parity
